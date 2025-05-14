@@ -1,0 +1,45 @@
+%
+% Some are commented out because they are surrounded by already plotted borders
+% The x-coordinate is in fractional hours, so must be times 15
+%
+
+\begin{axis}[name=constellations,axis lines=none]
+
+\input{./input/V_Boundaries.tex}
+
+\node[constellation-label] at (axis cs:{191,34})  {\large \textls{Canes}}; 
+\node[constellation-label] at (axis cs:{191,36})  {\large \textls{Venatici}};
+
+\node[constellation-label] at (axis cs:{188,21.5})  {\large \textls{Coma}}; 
+\node[constellation-label] at (axis cs:{188,23.2})  {\large \textls{Berenices}};
+
+\node[constellation-label][rotate=-90] at (axis cs:{180.8,35})  {{Ursa Major}};
+\node[constellation-label] at (axis cs:{186,-20})   {\Large \textls{Corvus}};
+\node[constellation-label] at (axis cs:{205,-35})   {\Huge \textls{Centaurus}};
+\node[constellation-label] at (axis cs:{205,-15})   {\Huge \textls{Virgo}};
+\node[constellation-label] at (axis cs:{198,-27})   {\huge \textls{Hydra}};
+\node[constellation-label] at (axis cs:{285.8,8})  {\Large \textls{Aquila}};
+\node[constellation-label] at (axis cs:{218,23})   {\huge \textls{Bootes}};
+\node[constellation-label] at (axis cs:{280,-38})  {{Corona Australis}};
+\node[constellation-label] at (axis cs:{238,28.5})    {\large \textls{Corona}}; 
+  \node[constellation-label] at (axis cs:{238,31.5})    {\large \textls{Borealis}};
+\node[constellation-label] at (axis cs:{260,18.5})   {\Huge \textls{Hercules}};
+\node[constellation-label] at (axis cs:{234,-13})   {\huge \textls{Libra}};
+\node[constellation-label] at (axis cs:{235,-32})   {\large \textls{Lupus}};
+\node[constellation-label] at (axis cs:{283,35})   {\huge \textls{Lyra}};
+\node[constellation-label] at (axis cs:{258,2.5})   {\Huge \textls{Ophiuchus}};
+\node[constellation-label] at (axis cs:{253,-32})   {\huge \textls{Scorpius}};
+\node[constellation-label] at (axis cs:{280,-12})   {\large \textls{Scutum}};
+\node[constellation-label] at (axis cs:{279,-28})   {\Large \textls{Sagittarius}};
+\node[constellation-label] at (axis cs:{288,19.2})  {{Sagitta}};
+\node[constellation-label] at (axis cs:{287,23.8})  {{Vulpecula}};
+
+
+\node[constellation-label][rotate=60] at (axis cs:{240,5})  {\Large \textls{Caput}};
+\node[constellation-label][rotate=60] at (axis cs:{233.5,7})  {\Large \textls{Serpens}};
+
+\node[constellation-label][rotate=-68] at (axis cs:{273.3,-7.3})  {\Large \textls{Serpens Cauda}};
+%\node[constellation-label][rotate=-60] at (axis cs:{273,-10})  {\Large \textls{Cauda}};
+
+
+\end{axis}

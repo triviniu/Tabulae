@@ -1,0 +1,63 @@
+
+\documentclass[10pt,landscape]{article}
+
+\input{./input/preamble.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\input{./input/styles_eq.tex}
+\center
+
+\tikzsetnextfilename{TabulaV}
+%
+% Coordinate limit of tab to plot
+\pgfplotsset{xmin=180,xmax=290,ymin=-40,ymax=40}
+
+\begin{tikzpicture}
+%
+% Empty plot to establish anchor points
+\begin{axis}[name=base,axis lines=none]\end{axis}
+
+% The Milky Way first, as it should not obstruct coordinate grid 
+\input{./input/V_MW.tex}
+
+
+
+% The Galactic coordinate system
+\input{./input/MW.tex}
+% Ecliptic coordinate system
+\input{./input/Ecliptics.tex}
+% Equatorial coordinate system
+\input{./input/Equator.tex}
+
+% Coordinate axes 
+\input{./input/axes.tex}
+% Coordinate grid
+\input{./input/grid.tex}
+
+% Ornamental frame
+\input{./input/frame.tex}
+% Symbol legend
+\input{./input/legend.tex}
+
+% Constellations
+\input{./input/V_Constellations.tex}
+
+% Nebulae and nebulae names
+\input{./input/V_Nebulae.tex}
+%
+% Stars and star names
+\input{./input/V_Stars.tex}
+\input{./input/V_Names.tex}
+
+%
+% Comets, own objects etc.
+\begin{axis}[name=transients,axis lines=none]
+\input{./input/transients.tex}
+\end{axis}
+
+\end{tikzpicture}
+
+
+\end{document}
+

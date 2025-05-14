@@ -1,0 +1,164 @@
+
+
+\input{./input/Markers.tex}
+
+% 
+% Colors
+\definecolor{Burgundy}{rgb}{.75,.25,.25}
+\definecolor{IndianRed4}{HTML}{8B3A3A}
+\definecolor{IndianRed3}{HTML}{CD5555}
+\definecolor{IndianRed2}{HTML}{EE6363}
+\definecolor{IndianRed1}{HTML}{FF6A6A}
+\definecolor{GoldenRod1}{HTML}{FFC125}
+\definecolor{Orchid}{rgb}{0.85, 0.44, 0.84}
+\definecolor{Mauve}{HTML}{B784A7}
+\colorlet{cConstellation}{IndianRed4}
+%\colorlet{cConstellation}{burgundy}
+\definecolor{ForestGreen}{rgb}{0.13, 0.55, 0.13}
+
+\colorlet{cFrame}{black}
+\colorlet{cStars}{black}
+\colorlet{cAxes}{black}
+
+
+\colorlet{cProper}{IndianRed2}
+\colorlet{cBayer}{IndianRed3}
+\colorlet{cFlamsteed}{IndianRed4}
+
+\colorlet{cTransient}{ForestGreen}
+
+\colorlet{cNGC}{Orchid}
+\colorlet{cMessier}{Orchid}
+
+%\colorlet{cNGC}{Mauve}
+%\colorlet{cMessier}{Mauve}
+
+%\colorlet{cNGC}{IndianRed4}
+%\colorlet{cMessier}{IndianRed4}
+
+%\colorlet{cNGC}{green!80!black}
+%\colorlet{cMessier}{blue}
+
+\colorlet{cEcliptic}{GoldenRod1!80!black}
+\colorlet{cEquator}{gray}
+
+\colorlet{cGrid}{black}
+
+\definecolor{DeepSkyBlue}{HTML}{00BFFF}
+% Milky Way  color
+\colorlet{cMW}{DeepSkyBlue}
+\colorlet{cMW0}{white}
+\colorlet{cMW1}{DeepSkyBlue!10}
+\colorlet{cMW2}{DeepSkyBlue!14}
+\colorlet{cMW3}{DeepSkyBlue!18}
+\colorlet{cMW4}{DeepSkyBlue!22}
+\colorlet{cMW5}{DeepSkyBlue!26}
+
+%\colorlet{cMW1}{DeepSkyBlue!15}
+%\colorlet{cMW2}{DeepSkyBlue!30}
+%\colorlet{cMW3}{DeepSkyBlue!45}
+%\colorlet{cMW4}{DeepSkyBlue!60}
+%\colorlet{cMW5}{DeepSkyBlue!75}
+
+%\colorlet{cMW6}{DeepSkyBlue!40}
+%\colorlet{cMW7}{DeepSkyBlue!50}
+%\colorlet{cMW8}{DeepSkyBlue!60}
+\colorlet{cMW9}{DeepSkyBlue!70}
+
+\def\symscale {1.5}
+
+\def\AtoBscale {0.9}
+\def\AtoCscale {0.8}
+
+\def\mOnescale   {0.48}
+\def\mTwoscale   {0.38}
+\def\mThreescale {0.3}
+\def\mFourscale  {0.23}
+\def\mFivescale  {0.15}
+\def\mSixscale   {0.1}
+
+
+% Styles:
+\pgfplotsset{MW0/.style={mark=,color=cMW0,fill=cMW0,opacity=1}}
+\pgfplotsset{MW1/.style={mark=,color=cMW1,fill=cMW1,opacity=1}}
+\pgfplotsset{MW2/.style={mark=,color=cMW2,fill=cMW2,opacity=1}}
+\pgfplotsset{MW3/.style={mark=,color=cMW3,fill=cMW3,opacity=1}}
+\pgfplotsset{MW4/.style={mark=,color=cMW4,fill=cMW4,opacity=1}}
+\pgfplotsset{MW5/.style={mark=,color=cMW5,fill=cMW5,opacity=1}}
+
+%\pgfplotsset{MW6/.style={mark=,color=cMW6,opacity=1}}
+%\pgfplotsset{MW7/.style={mark=,color=cMW7,opacity=1}}
+%\pgfplotsset{MW8/.style={mark=,color=cMW8,opacity=1}}
+%\pgfplotsset{MW9/.style={mark=,color=cMW9,opacity=1}}
+\pgfplotsset{MWX/.style={mark=,opacity=1}}
+\pgfplotsset{MWR/.style={mark=,color=red,opacity=1}}
+
+
+% Coordinate grid overlay
+\pgfplotsset{coordinategrid/.style={grid=major,major grid style={thin,color=cGrid}}}
+\tikzset{coordinategrid/.style={thin,color=cGrid}}
+% Ecliptics
+\tikzset{ecliptics-full/.style={color=cEcliptic,line width=.4pt,mark=,fill=cEcliptic,opacity=1}}
+\tikzset{ecliptics-empty/.style={color=cEcliptic,line width=.4pt,mark=,fill=,fill opacity=0}}
+\tikzset{ecliptics-label/.style={color=black,font=\scriptsize}}
+% Galactic Equator
+\tikzset{MWE-full/.style={color=cMW,line width=.4pt,mark=,fill=cMW,opacity=1}}
+\tikzset{MWE-empty/.style={color=cMW,line width=.4pt,mark=,fill=,fill opacity=0}}
+\tikzset{MWE-label/.style={color=black,font=\scriptsize}}
+% Equator
+\tikzset{Equator-full/.style={color=cEquator,line width=.4pt,mark=,fill=cEquator,opacity=1}}
+\tikzset{Equator-empty/.style={color=cEquator,line width=.4pt,mark=,fill=,fill opacity=0}}
+\tikzset{Equator-label/.style={color=black,font=\scriptsize}}
+% Transients
+\tikzset{transient-label/.style={color=cTransient,font=\bfseries\scriptsize}}
+\tikzset{transient/.style={color=cTransient,line width=1pt,mark=,opacity=1}}
+
+% To enable consistent input scripting:
+\newcommand\omicron{o}
+
+% Scale of panels:
+\newlength{\tendegree}
+\setlength{\tendegree}{3cm}
+\newlength{\onedegree}
+\setlength{\onedegree}{0.1\tendegree}
+
+% General style definitions
+\pgfkeys{/pgf/number format/.cd,fixed,precision=4}
+
+
+% For RA tickmark labeling
+\newcommand{\fh}{$^{\rm h}$}
+\newcommand{\fm}{$^{\rm m}$}
+
+
+
+% Style for constellation boundaries and names:
+\pgfplotsset{constellation/.style={thin,mark=,color=cConstellation,dashed}}
+\tikzset{constellation-label/.style={color=cConstellation!80,font=\bfseries}}
+\tikzset{constellation-boundary/.style={thin,mark=,color=cConstellation,dashed}}
+
+
+\tikzset{designation-label/.style={color=cProper,font=\bfseries\scriptsize}}
+ 
+% Style for Star markers and names
+\tikzset{stars/.style={color=black}}
+
+\tikzset{Proper/.style={color=cProper,font=\bfseries\footnotesize},pin edge={draw opacity=0}}
+\tikzset{Bayer/.style={color=cBayer,font=\bfseries\scriptsize},pin edge={draw opacity=0}}
+\tikzset{Flaamsted/.style={color=cFlamsteed,font=\bfseries\tiny},pin edge={draw opacity=0}}
+% Intersting objects label
+\tikzset{interest/.style={color=cProper}}
+\tikzset{interest-label/.style={color=cProper,font=\bfseries\tiny}}
+
+% Style for Nebulae markers and names
+\tikzset{NGC/.style={color=cNGC,pattern color=cNGC}}
+\tikzset{NGC-label/.style={color=cNGC,font=\bfseries\tiny},pin edge={draw opacity=0}}
+
+\tikzset{Caldwell/.style={color=cMessier,pattern color=cMessier}}
+\tikzset{Caldwell-label/.style={color=cMessier,font=\bfseries\scriptsize},pin edge={draw opacity=0}}
+
+\tikzset{Messier/.style={color=cMessier,pattern color=cMessier}}
+\tikzset{Messier-label/.style={color=cMessier,font=\bfseries\scriptsize},pin edge={draw opacity=0}}
+% An extra one for the Messier galaxies in the Virgo-group 
+\tikzset{Messier-label-crowded/.style={pin edge={draw opacity=1,color=cMessier,thin},color=cMessier,font=\bfseries\footnotesize}}
+

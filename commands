@@ -1,0 +1,36 @@
+rm Tabula*.p?? atlas_*.pdf
+
+pdflatex -shell-escape  TabI.tex 
+pdflatex -shell-escape  TabII.tex 
+pdflatex -shell-escape  TabVII.tex 
+pdflatex -shell-escape  TabVIII.tex 
+
+pdflatex -shell-escape  TabIII.tex 
+pdflatex -shell-escape  TabIV.tex 
+pdflatex -shell-escape  TabV.tex 
+pdflatex -shell-escape  TabVI.tex 
+
+pdflatex -shell-escape  TabIIIS.tex 
+pdflatex -shell-escape  TabIVS.tex 
+pdflatex -shell-escape  TabVS.tex 
+pdflatex -shell-escape  TabVIS.tex 
+
+pdflatex atlas_N.tex ; cp  atlas_N.pdf  final_N.pdf
+pdflatex atlas_S.tex ; cp  atlas_S.pdf  final_S.pdf
+
+rm TabI*.pdf TabV*.pdf *.dep *.aux* *.md5 *.dpth *.log
+
+convert  -trim  -density 600 -depth 8 -quality 100 TabulaI.pdf    TabulaI.png
+convert  -trim  -density 600 -depth 8 -quality 100 TabulaII.pdf   TabulaII.png
+convert  -trim  -density 600 -depth 8 -quality 100 TabulaVII.pdf  TabulaVII.png
+convert  -trim  -density 600 -depth 8 -quality 100 TabulaVIII.pdf TabulaVIII.png
+
+convert -density 600 -depth 8 -quality 100 TabulaIII.pdf TabulaIII.png
+convert -density 600 -depth 8 -quality 100 TabulaIV.pdf  TabulaIV.png
+convert -density 600 -depth 8 -quality 100 TabulaV.pdf   TabulaV.png
+convert -density 600 -depth 8 -quality 100 TabulaVI.pdf  TabulaVI.png
+
+convert -density 600 -depth 8 -quality 100 TabulaIII_S.pdf TabulaIII_S.png
+convert -density 600 -depth 8 -quality 100 TabulaIV_S.pdf  TabulaIV_S.png
+convert -density 600 -depth 8 -quality 100 TabulaV_S.pdf   TabulaV_S.png
+convert -density 600 -depth 8 -quality 100 TabulaVI_S.pdf  TabulaVI_S.png

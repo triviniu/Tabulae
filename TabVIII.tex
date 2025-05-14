@@ -1,0 +1,60 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% rm TabulaVIII.pdf ; pdflatex -shell-escape  TabVIII.tex 
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[10pt,landscape]{article}
+\usepackage[margin=1cm,a3paper]{geometry}
+
+\input{./input/preamble.tex}
+
+\begin{document} 
+
+
+%\input{./input/styles_dark.tex}
+\input{./input/styles_po.tex}
+\center
+
+\pgfplotsset{xmin=0,xmax=360,ymin=-90,ymax=-2.5
+,y coord trafo/.code=\pgfmathparse{-90-#1}
+  ,y coord inv trafo/.code=\pgfmathparse{-90-#1}
+,x coord trafo/.code=\pgfmathparse{0-#1}
+,x coord inv trafo/.code=\pgfmathparse{0-#1}
+}
+
+\tikzsetnextfilename{TabulaVIII}
+
+
+\begin{tikzpicture}
+
+\begin{polaraxis}[rotate=270,name=base,axis y line=none,axis x line=none
+]\end{polaraxis}
+
+
+
+% The Milky Way first, as it should not obstruct coordinate systems 
+\input{./input/VIII_MW.tex}
+
+\input{./input/VIII_Grid.tex}
+\input{./input/VIII_Axes.tex}
+\input{./input/VIIaVIII_Frame.tex}
+\input{./input/VIIaVIII_Legend.tex}
+
+% The Galactic coordinate system
+\input{./input/VIII_MWcoord.tex}
+
+
+% Constellations
+%
+\input{./input/VIII_Constellations.tex}
+
+% Nebulae and nebulae names
+\input{./input/VIII_Nebulae.tex}
+% Stars and star names
+\input{./input/VIII_Stars.tex}
+\input{./input/VIII_Names.tex}
+
+%
+\end{tikzpicture}
+
+\end{document}

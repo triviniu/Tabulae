@@ -1,0 +1,55 @@
+%
+% Some are commented out because they are surrounded by already plotted borders
+% The x-coordinate is in fractional hours, so must be times 15
+%
+\begin{polaraxis}[rotate=270,name=constellations,at=(base.center),anchor=center,axis lines=none]
+
+\clip (6\tendegree,0\tendegree) arc (0:90:6\tendegree) -- 
+(-2\tendegree,6\tendegree) -- (-2\tendegree,-6\tendegree) -- (0\tendegree,-6\tendegree)
+--  (0\tendegree,-6\tendegree) arc (270:359.9999:6\tendegree) -- cycle ;
+
+\input{./input/IaII_Boundaries.tex}
+
+
+
+% Labels
+
+% Phoenix too small to label
+
+
+
+\node[constellation-label] at (axis cs:{85,40})  {\Huge \bfseries\textls{Auriga}};
+\node[constellation-label] at (axis cs:{260,60}) {\huge \bfseries\textls{Draco}};
+
+\node[constellation-label] at (axis cs:{240,80}) {\Large \bfseries\textls{Ursa}};
+  \node[constellation-label] at (axis cs:{230,75}) {\Large \bfseries\textls{Minor}};
+\node[constellation-label] at (axis cs:{115,50}) {\huge \bfseries\textls{Lynx}};
+
+\node[constellation-label] at (axis cs:{163,51}) {\Huge \bfseries\textls{Ursa}};
+  \node[constellation-label] at (axis cs:{157,46}) {\Huge \bfseries\textls{Major}};
+\node[constellation-label,rotate=25] at (axis cs:{150,37}) {\large\bfseries\textls{Leo Minor}};
+\node[constellation-label] at (axis cs:{225,45}) {\huge\bfseries\textls{Bootes}};
+
+\node[constellation-label] at (axis cs:{197,45}) {\Large\bfseries\textls{Canes}};
+\node[constellation-label] at (axis cs:{195.5,40}) {\Large\bfseries\textls{Venatici}};
+
+\node[constellation-label,rotate=35] at (axis cs:{145,32}) {\bfseries\textls{Leo}};
+\node[constellation-label,rotate=51] at (axis cs:{129,32}) {\bfseries\textls{Cancer}};
+\node[constellation-label,rotate=72] at (axis cs:{108,32}) {\bfseries\textls{Gemini}};
+\node[constellation-label] at (axis cs:{91,70}) {\Large\bfseries\textls{Camelopardalis}};
+\node[constellation-label,rotate=-14] at (axis cs:{194,30.7}) {\bfseries\textls{Coma}};
+\node[constellation-label,rotate=-6] at (axis cs:{186,30.7}) {\bfseries\textls{Berenices}};
+
+\node[constellation-label,rotate=0] at (axis cs:{242,35}) {\bfseries\textls{Corona}};
+\node[constellation-label,rotate=0] at (axis cs:{237,35}) {\bfseries\textls{Borealis}};
+
+\node[constellation-label] at (axis cs:{68,45}) {\large\bfseries\textls{Perseus}};
+\node[constellation-label] at (axis cs:{30,72}) {\large\bfseries\textls{Cassiopeia}};
+\node[constellation-label] at (axis cs:{330,71}) {\large\bfseries\textls{Cepheus}};
+\node[constellation-label,rotate=-72] at (axis cs:{72,29}) {{Tau}};
+\node[constellation-label] at (axis cs:{264,40}) {\LARGE\bfseries\textls{Hercules}};
+
+\node[constellation-label] at (axis cs:{282,37}) {\LARGE\bfseries\textls{Lyra}};
+\node[constellation-label] at (axis cs:{294,48.5}) {\Large\bfseries\textls{Cygnus}};
+
+\end{polaraxis}

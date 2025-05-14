@@ -1,0 +1,74 @@
+%
+% Some are commented out because they are surrounded by already plotted borders
+% The x-coordinate is in fractional hours, so must be times 15
+%
+\begin{polaraxis}[rotate=270,name=constellations,at={($(base.center)+(+0.75pt,0pt)$)},anchor=center,axis lines=none]
+
+\clip (6\tendegree,0\tendegree) arc (0:90:6\tendegree) -- 
+(-2\tendegree,6\tendegree) -- (-2\tendegree,-6\tendegree) -- (0\tendegree,-6\tendegree)
+--  (0\tendegree,-6\tendegree) arc (270:359.9999:6\tendegree) -- cycle ;
+
+\input{./input/VIIaVIII_boundaries.tex}
+
+
+
+% Labels
+
+% Phoenix too small to label
+
+
+
+\node[constellation-label] at (axis cs:{240,-53}) {\large\bfseries\textls{Norma}};
+
+\node[constellation-label] at (axis cs:{244,-65.3}) {\normalsize\bfseries\textls{Triangulum}};
+\node[constellation-label] at (axis cs:{234,-65}) {\normalsize\bfseries\textls{australe}};
+
+\node[constellation-label] at (axis cs:{224,-64.5}) {\normalsize\bfseries\textls{Circinus}};
+
+\node[constellation-label] at (axis cs:{118.5,-70}) {\large\bfseries\textls{Volans}};
+\node[constellation-label] at (axis cs:{194,-70}) {\normalsize\bfseries\textls{Musca}};
+\node[constellation-label] at (axis cs:{122.5,-60}) {\Large\bfseries\textls{Carina}};
+\node[constellation-label] at (axis cs:{110,-45}) {\Large\bfseries\textls{Puppis}};
+
+\node[constellation-label,rotate=-20] at (axis cs:{160,-78}) {\normalsize\bfseries\textls{Chamaeleon}};
+\node[constellation-label,rotate=60] at (axis cs:{240,-75}) {\Large\bfseries\textls{Apus}};
+\node[constellation-label,rotate=103] at (axis cs:{103,-31}) {\normalsize\bfseries\textls{Canis Major}};
+\node[constellation-label,rotate=85] at (axis cs:{85,-37}) {\large\bfseries\textls{Columba}};
+\node[constellation-label] at (axis cs:{85,-53}) {\large\bfseries\textls{Pictor}};
+\node[constellation-label,rotate=-45] at (axis cs:{78,-62}) {\large\bfseries\textls{Dorado}};
+\node[constellation-label,rotate=0] at (axis cs:{89,-74}) {\large\bfseries\textls{Mensa}};
+\node[constellation-label,rotate=-17] at (axis cs:{73,-39}) {\normalsize\bfseries\textls{Caelum}};
+\node[constellation-label,rotate=-32] at (axis cs:{57,-59}) {\normalsize\bfseries\textls{Reticulum}};
+\node[constellation-label,rotate=45] at (axis cs:{45,-73}) {\large\bfseries\textls{Hydrus}};
+
+\node[constellation-label,rotate=0] at (axis cs:{1,-73.5}) {\small\bfseries\textls{Tucana}};
+\node[constellation-label,rotate=0] at (axis cs:{335,-71.5}) {\normalsize\bfseries\textls{Indus}};
+\node[constellation-label,rotate=0] at (axis cs:{63.5,-47}) {\small\bfseries\textls{Hor.}};
+\node[constellation-label,rotate=-45] at (axis cs:{44,-65}) {\normalsize\bfseries\textls{Hor.}};
+
+
+\node[constellation-label] at (axis cs:{310,-79}) {\Large\bfseries\textls{Octans}};
+
+
+\node[constellation-label,rotate=-65] at (axis cs:{295,-65}) {\Large\bfseries\textls{Pavo}};
+\node[constellation-label,rotate=0] at (axis cs:{258,-55}) {\Large\bfseries\textls{Ara}};
+
+\node[constellation-label,rotate=-70] at (axis cs:{290,-52}) {\normalsize\bfseries\textls{Telescopium}};
+
+\node[constellation-label,rotate=-80] at (axis cs:{280,-41}) {\normalsize\bfseries\textls{Corona australis}};
+\node[constellation-label,rotate=-80] at (axis cs:{280,-34}) {\Large\bfseries\textls{Sagittarius}};
+\node[constellation-label,rotate=-0] at (axis cs:{260,-38}) {\LARGE\bfseries\textls{Scorpius}};
+
+\node[constellation-label,rotate=0] at (axis cs:{187,-59.5}) {\large\bfseries\textls{Crux}};
+\node[constellation-label,rotate=0] at (axis cs:{180,-33}) {\large\bfseries\textls{Hydra}};
+\node[constellation-label,rotate=-0] at (axis cs:{230,-42}) {\Large\bfseries\textls{Lupus}};
+
+\node[constellation-label,rotate=-0] at (axis cs:{191,-45}) {\LARGE\bfseries\textls{Centaurus}};
+
+
+\node[constellation-label,rotate=-29] at (axis cs:{151,-33}) {\large\bfseries\textls{Antlia}};
+\node[constellation-label,rotate=-46] at (axis cs:{134,-33}) {\normalsize\bfseries\textls{Pyxis}};
+\node[constellation-label,rotate=-0] at (axis cs:{150,-49}) {\Large\bfseries\textls{Vela}};
+
+
+\end{polaraxis}

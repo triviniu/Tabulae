@@ -1,0 +1,71 @@
+%
+% Some are commented out because they are surrounded by already plotted borders
+% The x-coordinate is in fractional hours, so must be times 15
+%
+
+\begin{polaraxis}[rotate=90,name=constellations,at={($(base.center)+(-0.8cm+0.75pt,0pt)$)},anchor=center,axis lines=none,clip=false]
+
+%\begin{scope}
+
+\clip  (0\tendegree,-6\tendegree) arc (270:179.999:6\tendegree)  -- (-6\tendegree,0\tendegree) arc (180:90:6\tendegree)  -- (2\tendegree,6\tendegree)  -- (2\tendegree,-6\tendegree) -- cycle ;
+
+\input{./input/VIIaVIII_boundaries.tex}
+
+
+
+% Labels
+
+
+
+
+\node[constellation-label] at (axis cs:{246,-53}) {\large\bfseries\textls{Norma}};
+
+\node[constellation-label] at (axis cs:{234,-65}) {\normalsize\bfseries\textls{Triangulum}};
+\node[constellation-label] at (axis cs:{245,-65}) {\normalsize\bfseries\textls{australe}};
+
+\node[constellation-label] at (axis cs:{218,-67}) {\normalsize\bfseries\textls{Circinus}};
+
+\node[constellation-label] at (axis cs:{120,-70}) {\large\bfseries\textls{Volans}};
+\node[constellation-label] at (axis cs:{190,-74}) {\normalsize\bfseries\textls{Musca}};
+\node[constellation-label] at (axis cs:{150,-73}) {\normalsize\bfseries\textls{Car}};
+\node[constellation-label] at (axis cs:{110,-58}) {\Large\bfseries\textls{Carina}};
+\node[constellation-label] at (axis cs:{105,-44}) {\Large\bfseries\textls{Puppis}};
+
+\node[constellation-label,rotate=-20] at (axis cs:{160,-78}) {\normalsize\bfseries\textls{Chamaeleon}};
+\node[constellation-label,rotate=60] at (axis cs:{240,-75}) {\Large\bfseries\textls{Apus}};
+\node[constellation-label,rotate=103] at (axis cs:{103,-31}) {\normalsize\bfseries\textls{Canis Major}};
+\node[constellation-label,rotate=85] at (axis cs:{85,-37}) {\large\bfseries\textls{Columba}};
+\node[constellation-label] at (axis cs:{85,-53}) {\large\bfseries\textls{Pictor}};
+\node[constellation-label,rotate=-45] at (axis cs:{78,-62}) {\large\bfseries\textls{Dorado}};
+\node[constellation-label,rotate=0] at (axis cs:{89,-74}) {\large\bfseries\textls{Mensa}};
+\node[constellation-label,rotate=-17] at (axis cs:{73,-39}) {\normalsize\bfseries\textls{Caelum}};
+\node[constellation-label,rotate=-32] at (axis cs:{57,-59}) {\normalsize\bfseries\textls{Reticulum}};
+\node[constellation-label,rotate=45] at (axis cs:{45,-73}) {\large\bfseries\textls{Hydrus}};
+\node[constellation-label,rotate=0] at (axis cs:{50,-51}) {\large\bfseries\textls{Horologium}};
+\node[constellation-label,rotate=5] at (axis cs:{45,-45}) {\LARGE\bfseries\textls{Eridanus}};
+
+
+\node[constellation-label,rotate=42] at (axis cs:{42,-37}) {\Large\bfseries\textls{Fornax}};
+\node[constellation-label,rotate=5] at (axis cs:{5,-37}) {\Large\bfseries\textls{Sculptor}};
+\node[constellation-label,rotate=7] at (axis cs:{7,-47}) {\Large\bfseries\textls{Phoenix}};
+\node[constellation-label,rotate=-5] at (axis cs:{355,-63}) {\Large\bfseries\textls{Tucana}};
+
+\node[constellation-label] at (axis cs:{310,-79}) {\Large\bfseries\textls{Octans}};
+\node[constellation-label,rotate=-17] at (axis cs:{343,-45}) {\Large\bfseries\textls{Grus}};
+
+\node[constellation-label,rotate=-25] at (axis cs:{335,-35}) {\normalsize\bfseries\textls{Piscis Austrinus}};
+
+\node[constellation-label,rotate=-45] at (axis cs:{315,-38}) {\normalsize\bfseries\textls{Micros-}};
+\node[constellation-label,rotate=-45] at (axis cs:{315,-36}) {\normalsize\bfseries\textls{copium}};
+
+\node[constellation-label,rotate=-40] at (axis cs:{320,-57}) {\large\bfseries\textls{Indus}};
+
+\node[constellation-label,rotate=-65] at (axis cs:{295,-65}) {\Large\bfseries\textls{Pavo}};
+\node[constellation-label,rotate=0] at (axis cs:{258,-55}) {\Large\bfseries\textls{Ara}};
+
+\node[constellation-label,rotate=-70] at (axis cs:{290,-52}) {\normalsize\bfseries\textls{Telescopium}};
+
+\node[constellation-label,rotate=-80] at (axis cs:{280,-41}) {\normalsize\bfseries\textls{Corona australis}};
+\node[constellation-label,rotate=-70] at (axis cs:{290,-34}) {\Large\bfseries\textls{Sagittarius}};
+\node[constellation-label,rotate=-0] at (axis cs:{260,-38}) {\LARGE\bfseries\textls{Scorpius}};
+\end{polaraxis}

@@ -1,0 +1,37 @@
+
+\usepackage[margin=1cm,a3paper]{geometry}
+
+\def\pgfsysdriver{pgfsys-pdftex.def}
+\usepackage{pgfplots}
+\usepgfplotslibrary{external} 
+\usetikzlibrary{pgfplots.external}
+\usetikzlibrary{calc}
+\usetikzlibrary{shapes}
+\usetikzlibrary{patterns}
+\usetikzlibrary{plotmarks}
+\usepgflibrary{arrows}
+\usepgfplotslibrary{polar}
+\tikzexternalize
+
+\usepackage{times,latexsym,amssymb}
+\usepackage{eulervm} % math font
+\pagestyle{empty}
+
+\usepackage{amsmath} 
+\usepackage{nicefrac} 
+%
+% This is used because from 1.11 onwards the use of \pgfdeclareplotmark will
+% introduce a shift of the stellar markers.
+%
+\pgfplotsset{compat=1.10}
+%
+% Use to increase spacing for constellation labels
+\usepackage[letterspace=400]{microtype}
+%
+\usepackage{pagecolor}
+\usepackage{natbib}
+%
+
+
+%\pagecolor{black}
+\pagecolor{white}

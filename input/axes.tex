@@ -1,0 +1,11 @@
+
+
+% Left and bottom axis with gridlines
+  \begin{axis}[at=(base.center),anchor=center,RA_in_hours,color=cAxes] \end{axis}
+% Right and top axis, labelling in RA hours (offset)
+  \begin{axis}[at=(base.center),anchor=center,yticklabel pos=right,xticklabel pos=right,RA_in_hours
+  ,xticklabel style={yshift=2.5ex, anchor=south},color=cAxes]\end{axis}
+% Top axis labelling in RA degree (small offset)
+  \begin{axis}[at=(base.center),anchor=center,axis y line=none,xticklabel pos=top,RA_in_deg
+     ,xticklabel style={font=\footnotesize},xticklabel style={yshift=0.5ex, anchor=south} ,color=cAxes]
+  \end{axis}

@@ -1,0 +1,23 @@
+
+
+  \begin{axis}[name=frame,at={($(base.center)+(-.376cm,-19.5\onedegree)$)},anchor=center,width=12.43\tendegree,height=8.53\tendegree,ticks=none
+  ,yticklabels={},xticklabels={},axis line style={line width=1pt},color=cFrame] \end{axis}
+
+  \begin{axis}[name=frame2,at={($(frame.center)+(0cm,+0cm)$)},anchor=center,width=12.53\tendegree,height=8.63\tendegree,ticks=none
+  ,yticklabels={},xticklabels={},axis line style={line width=3pt},color=cFrame] \end{axis}
+  
+
+
+\begin{polaraxis}[rotate=270,at=(base.center),anchor=center,y axis line style= { draw opacity=0 },
+    axis x line=none,y tick label style= { opacity=0 },y tick style= {opacity=0 }
+,grid=none,width=13\tendegree,height=13\tendegree]
+
+\clip (-0\tendegree,-8\tendegree) --  (8\tendegree,-8\tendegree) --
+(8\tendegree,8\tendegree) --  (-0\tendegree,8\tendegree) -- cycle ;
+
+\draw[line width=0.6\onedegree,color=white] (0,0) circle (6.245\tendegree);
+
+\draw[line width=1pt] (0,0) circle (6.215\tendegree);
+\draw[line width=3pt] (0,0) circle (6.265\tendegree);
+
+  \end{polaraxis}

@@ -1,0 +1,44 @@
+\input{./input/styles_common}
+
+
+% General style definitions
+\pgfkeys{/pgf/number format/.cd,fixed,precision=4}
+
+\pgfplotsset{tick label style={font=\normalsize}, label style={font=\large}, legend style={font=\large}
+  ,every axis/.append style={scale only axis},scaled ticks=false
+  % A3paper has size 297 × 420mm
+   ,width=14\tendegree,height=14\tendegree,x dir=reverse
+%  ,/pgf/number format/set thousands separator={\,}
+%
+%    ,ytick={-90,-80,...,90},minor y tick num=0
+%  ,yticklabels={$-90^\circ$,$-80^\circ$,$-70^\circ$,$-60^\circ$,$-50^\circ$,$-40^\circ$,$-30^\circ$,$-20^\circ$,$-10^\circ$,$0^\circ$,
+%    $+10^\circ$,$+20^\circ$,$+30^\circ$,$+40^\circ$,$+50^\circ$,$+60^\circ$,$+70^\circ$,$+80^\circ$,$+90^\circ$}
+%  
+}
+
+
+
+% RA tickmark labels in hours
+\pgfplotsset{RA_in_hours/.style={,xtick={0,10,...,360},minor x tick num=0
+      ,xticklabels={0\fh{\small 00}\fm,0\fh{\small 40}\fm,1\fh{\small 20}\fm,2\fh{\small
+      00}\fm,2\fh{\small 40}\fm,3\fh{\small 20}\fm,4\fh{\small 00}\fm,4\fh{\small
+      40}\fm,5\fh{\small 20}\fm,6\fh{\small 00}\fm,6\fh{\small 40}\fm,7\fh{\small
+      20}\fm,8\fh{\small 00}\fm,8\fh{\small 40}\fm,9\fh{\small 20}\fm,10\fh{\small
+      00}\fm,10\fh{\small 40}\fm,11\fh{\small 20}\fm,12\fh{\small 00}\fm,12\fh{\small
+      40}\fm,13\fh{\small 20}\fm,14\fh{\small 00}\fm,14\fh{\small 40}\fm,15\fh{\small
+      20}\fm,16\fh{\small 00}\fm,16\fh{\small 40}\fm,17\fh{\small 20}\fm,18\fh{\small
+      00}\fm,18\fh{\small 40}\fm,19\fh{\small 20}\fm,20\fh{\small 00}\fm,20\fh{\small
+      40}\fm,21\fh{\small 20}\fm,22\fh{\small 00}\fm,22\fh{\small 40}\fm,23\fh{\small
+      20}\fm,0\fh{\small 00}\fm,0\fh{\small 40}\fm,1\fh{\small 20}\fm}}}
+
+% RA tickmark labels in degree
+\pgfplotsset{RA_in_deg/.style={,xtick={0,10,...,360},minor x tick num=0,x dir=reverse,
+      tick label style={font=\footnotesize},xticklabels={$0^\circ$,$10^\circ$,$20^\circ$,$30^\circ$, 
+      $40^\circ$,$50^\circ$,$60^\circ$,$70^\circ$,$80^\circ$,$90^\circ$,$100^\circ$,$110^\circ$,$120^\circ$,
+      $130^\circ$,$140^\circ$,$150^\circ$,$160^\circ$,$170^\circ$,$180^\circ$,$190^\circ$,$200^\circ$,
+      $210^\circ$,$220^\circ$,$230^\circ$,$240^\circ$,$250^\circ$,$260^\circ$,$270^\circ$,$280^\circ$,
+      $290^\circ$,$300^\circ$,$310^\circ$,$320^\circ$,$330^\circ$,$340^\circ$,$350^\circ$}  
+}} 
+% RA tickmark labels in degree
+\pgfplotsset{RA_in_deg_pole/.style={,xtick={0,30,...,360},minor x tick num=0,x dir=reverse
+}} 

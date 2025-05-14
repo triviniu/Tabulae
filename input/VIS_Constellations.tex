@@ -1,0 +1,45 @@
+%
+% Some are commented out because they are surrounded by already plotted borders
+% The x-coordinate is in fractional hours, so must be times 15
+%
+
+\begin{axis}[name=constellations,at=(base.center),anchor=center,axis lines=none]
+
+\input{./input/VI_Boundaries.tex}
+
+\node[constellation-label] at (axis cs:{283,35})   {\huge \textls{Lyra}};
+\node[constellation-label] at (axis cs:{280,-12})   {\large \textls{Scutum}};
+\node[constellation-label][rotate=-68] at (axis cs:{273.3,-7.3})  {\Large \textls{Serpens Cauda}};
+\node[constellation-label] at (axis cs:{280,-38})  {{Corona Australis}};
+
+\node[constellation-label] at (axis cs:{310,23})  {\large \textls{Vulpecula}};
+
+\node[constellation-label] at (axis cs:{287,-28})   {\huge \textls{Sagittarius}};
+\node[constellation-label,rotate=-90] at (axis cs:{273,8})   {\textls{Ophiuchus}};
+\node[constellation-label] at (axis cs:{295,3})  {\huge \textls{Aquila}};
+\node[constellation-label] at (axis cs:{275,19})   {\large \textls{Hercules}};
+\node[constellation-label] at (axis cs:{291,18})  {\large \textls{Sagitta}};
+\node[constellation-label] at (axis cs:{370,-15})  {\huge \textls{Cetus}};
+\node[constellation-label] at (axis cs:{365,6})  {\Huge \textls{Pisces}};
+\node[constellation-label] at (axis cs:{370,-35}) {\LARGE \textls{Sculptor}};
+\node[constellation-label] at (axis cs:{362,37})  {\Large \textls{Andromeda}};  
+\node[constellation-label] at (axis cs:{342,22})  {\Huge \textls{Pegasus}};
+
+%
+\node[constellation-label] at (axis cs:{314,-22})  {\huge \textls{Capricornus}};  
+\node[constellation-label] at (axis cs:{339,-15})  {\huge \textls{Aquarius}};  
+\node[constellation-label] at (axis cs:{310,35})  {\huge \textls{Cygnus}};  
+\node[constellation-label] at (axis cs:{337,38})  {\large \textls{Lacerta}};  
+\node[constellation-label][rotate=-75] at (axis cs:{318,7.5})  {\large \textls{Equuleus}};  
+\node[constellation-label] at (axis cs:{312,17.5})  {\large \textls{Delphinus}};  
+
+\node[constellation-label] at (axis cs:{340,-28})  {\Large \textls{Austrinus}};  
+  \node[constellation-label] at (axis cs:{335,-31})  {\Large \textls{Piscis}};  
+
+  \node[constellation-label][rotate=-75] at (axis cs:{315,-35})  {\Large {Microscopium}};  
+\node[constellation-label] at (axis cs:{335,-38})  {\large \textls{Grus}};  
+
+
+
+
+\end{axis}

@@ -1,0 +1,52 @@
+%
+% Some are commented out because they are surrounded by already plotted borders
+% The x-coordinate is in fractional hours, so must be times 15
+%
+
+
+\begin{axis}[name=constellations,axis lines=none]
+
+
+\input{./input/IV_Boundaries.tex}
+
+
+% Labels
+
+\node[constellation-label] at (axis cs:{191,34})  {\large \textls{Canes}}; 
+\node[constellation-label] at (axis cs:{191,36})  {\large \textls{Venatici}};
+
+\node[constellation-label] at (axis cs:{188,21.5})  {\large \textls{Coma}}; 
+\node[constellation-label] at (axis cs:{188,23.2})  {\large \textls{Berenices}};
+\
+\node[constellation-label] at (axis cs:{118,3.5})  {\Large \textls{Canis}};
+\node[constellation-label] at (axis cs:{116.5,7.5})  {\Large \textls{Minor}};
+
+\node[constellation-label] at (axis cs:{105,-22})  {\Large \textls{Canis}};
+\node[constellation-label] at (axis cs:{105,-18.5})  {\Large \textls{Major}};
+
+
+
+
+\node[constellation-label] at (axis cs:{105,38})  {\large \textls{Auriga}};
+\node[constellation-label] at (axis cs:{130,36})  {\large \textls{Lynx}};
+\node[constellation-label] at (axis cs:{150,37})  {\large \textls{Leo Minor}};
+\node[constellation-label] at (axis cs:{171,35})  {\large \textls{Ursa Major}};
+\node[constellation-label] at (axis cs:{103,19}) {\huge \textls{Gemini}};
+\node[constellation-label] at (axis cs:{112,-2})  {\Large \textls{Monoceros}};
+\node[constellation-label] at (axis cs:{155,-2}) {\Large \textls{Sextans}};
+\node[constellation-label] at (axis cs:{172,-16}) {\Large \textls{Crater}};
+\node[constellation-label] at (axis cs:{186,-20}) {\Large \textls{Corvus}};
+\node[constellation-label][rotate=-45] at (axis cs:{115,-35}) {\huge \textls{Puppis}};
+\node[constellation-label] at (axis cs:{135,-29}) {\Large \textls{Pyxis}};
+\node[constellation-label] at (axis cs:{153,-35}) {\Large \textls{Antlia}};
+\node[constellation-label] at (axis cs:{185,-38}) {\large \textls{Centaurus}};
+\node[constellation-label] at (axis cs:{130,23}) {\huge \textls{Cancer}};
+\node[constellation-label] at (axis cs:{160,16.5}) {\Huge \textls{Leo}};
+\node[constellation-label] at (axis cs:{182.5,-5}) {\Huge \textls{Virgo}};
+\node[constellation-label][rotate=30] at (axis cs:{155,-23}) {\Huge \textls{Hydra}};
+\node[constellation-label,rotate=-90] at (axis cs:{92,8})  {\large \textls{Orion}};
+\node[constellation-label,rotate=-90] at (axis cs:{91,-20})  {\large \textls{Lepus}};
+\node[constellation-label] at (axis cs:{95,-36}) {\large \textls{Columba}};
+\node[constellation-label] at (axis cs:{136,-38.5}) {\normalsize \textls{Vela}};
+
+\end{axis}

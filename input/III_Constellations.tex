@@ -1,0 +1,41 @@
+%
+% Some are commented out because they are surrounded by already plotted borders
+% The x-coordinate is in fractional hours, so must be times 15
+%
+
+\begin{axis}[name=constellations,at=(base.center),anchor=center,axis lines=none]
+
+\input{./input/III_Boundaries.tex}
+
+
+
+% Labels
+
+% Phoenix too small to label
+
+\node[constellation-label] at (axis cs:{40,23.25})  {\Huge \textls{Aries}};  
+\node[constellation-label] at (axis cs:{20,-8})  {\Huge \textls{Cetus}};
+\node[constellation-label] at (axis cs:{15,13.3})  {\Huge \textls{Pisces}};
+\node[constellation-label] at (axis cs:{80,5.1})   {\Huge \textls{Orion}};
+\node[constellation-label] at (axis cs:{58,13.8})  {\Huge \textls{Taurus}};
+\node[constellation-label] at (axis cs:{60,-16}) {\Huge \textls{Eridanus}};
+\node[constellation-label] at (axis cs:{83,-19}) {\huge \textls{Lepus}};
+\node[constellation-label] at (axis cs:{40,-33}) {\LARGE \textls{Fornax}};
+\node[constellation-label] at (axis cs:{12,-35}) {\LARGE \textls{Sculptor}};
+\node[constellation-label] at (axis cs:{90,35})  {\Large \textls{Auriga}};
+\node[constellation-label] at (axis cs:{101.5,25}) {\Large \textls{Gemini}};
+\node[constellation-label] at (axis cs:{54,36})  {\Large \textls{Perseus}};
+\node[constellation-label] at (axis cs:{102,-1.5}) {\Large \textls{Monoceros}};
+\node[constellation-label] at (axis cs:{85,-36.5}) {\Large \textls{Columba}};
+\node[constellation-label] at (axis cs:{10,37})  {\Large \textls{Andromeda}};  
+\node[constellation-label] at (axis cs:{103,-19}) {\Large \textls{Canis}};
+  \node[constellation-label] at (axis cs:{103,-22.5}) {\Large \textls{Major}};
+\node[constellation-label] at (axis cs:{33,32.5})   {\large \textls{Triangulum}};     
+\node[constellation-label] at (axis cs:{105,-37}) {\large \textls{Puppis}};
+\node[constellation-label,rotate=-70] at (axis cs:{73,-35}) {\large \textls{Caelum}};
+\node[constellation-label,rotate=-90] at (axis cs:{1.5,21})  { Pegasus};
+\node[constellation-label,rotate=90] at (axis cs:{108.5,7})  { Canis Minor};
+
+
+
+\end{axis}

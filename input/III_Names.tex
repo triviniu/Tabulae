@@ -1,0 +1,682 @@
+
+
+
+\begin{axis}[name=base,axis lines=none]
+ \boldmath
+
+\node[designation-label,anchor=south east]  at (axis cs:{04*15+35/4},{+16+30/ 60  })  {Aldebaran};    
+
+\node[designation-label,anchor=south east]  at (axis cs:{05*15+36/4},{-01-12/ 60  })  {Alnilam};   
+\node[designation-label,anchor=south east]  at (axis cs:{05*15+40/4},{-01-56/ 60  })  {Alnitak};   
+\node[designation-label,anchor=south east]  at (axis cs:{05*15+55/4},{+07+24/ 60  })  {Betelgeuse};  
+
+\node[designation-label,anchor=south west]  at (axis cs:{05*15+14/4},{- 8-12/ 60  })  {Rigel};   
+\node[designation-label,anchor=south west]  at (axis cs:{05*15+25/4},{+06+20/ 60  })  {Bellatrix};   
+\node[designation-label,anchor=south west]  at (axis cs:{05*15+26/4},{+28+36/ 60  })  {Alnath};   
+\node[designation-label,anchor=south west]  at (axis cs:{06*15+22/4},{-17-57/ 60  })  {Mirzam};   
+\node[designation-label,anchor=south west]  at (axis cs:{06*15+37/4},{+16+23/ 60  })  {Alhena};   
+\node[designation-label,anchor=south west]  at (axis cs:{06*15+45/4},{-16-42/ 60  })  {Sirius};   
+\node[designation-label,anchor=south west]  at (axis cs:{06*15+58/4},{-28-58/ 60  })  {Adara};   
+\node[designation-label,anchor=south west]  at (axis cs:{07*15+ 8/4},{-26-23/ 60  })  {Wezen}; 
+
+\node[interest,pin={[pin distance=-0.4\onedegree,interest-label]90:{V838}}] at (axis cs:7*15+4.08/4,-5+50.7/60) {\pgfuseplotmark{+}} ; % V838 Mon
+\node[interest,pin={[pin distance=-0.4\onedegree,interest-label]90:{v.\,Maanen's star}}] at (axis cs:12.29,5.39) {\pgfuseplotmark{+}} ;
+\node[interest,pin={[pin distance=-0.4\onedegree,interest-label]0:{T}}] at (axis cs:65.498,19.535) {\pgfuseplotmark{+}} ; % T Tau
+
+\node[stars,pin={[pin distance=-0.6\onedegree,Flaamsted]0:{AE}}] at (axis cs:79.06,34.31) {} ; % AE Aur
+
+\node[stars,pin={[pin distance=-0.6\onedegree,Flaamsted]0:{UU}}] at (axis cs:099.1368212654100,+38.4455052837800) {} ; % UU Aur
+\node[stars,pin={[pin distance=-0.6\onedegree,Flaamsted]180:{WW}}] at (axis cs:098.1132698606000,+32.4548978969700) {} ; % WW Aur
+
+\node[stars,pin={[pin distance=-0.6\onedegree,Flaamsted]0:{R}}] at (axis cs:6.008,38.577)  {\tikz\pgfuseplotmark{m6av};} ; % R And
+\node[stars,pin={[pin distance=-0.6\onedegree,Flaamsted]180:{R}}] at (axis cs:39.26,34.264) {\tikz\pgfuseplotmark{m6cv};} ; % R Tri
+\node[stars,pin={[pin distance=-0.6\onedegree,Flaamsted]-90:{X}}] at (axis cs:058.8461572733700,+31.0458443989300)  {\tikz\pgfuseplotmark{m6cv};} ; % X Per
+\node[stars,pin={[pin distance=-0.6\onedegree,Flaamsted]270:{T}}] at (axis cs:005.4428049075,-20.0580235628) {} ; % T Cet
+
+\node[stars,pin={[pin distance=-0.6\onedegree,Flaamsted]90:{R}}] at (axis cs:73.8277409664600,-16.4177706596900) {} ; % R Eri
+\node[stars,pin={[pin distance=-0.6\onedegree,Flaamsted]0:{S}}] at (axis cs:091.4397903266700,-24.1955597292800)  {\tikz\pgfuseplotmark{m6cv};} ; % S Lep
+\node[stars,pin={[pin distance=-0.6\onedegree,Flaamsted]0:{R}}] at (axis cs:74.9014528838000,-14.8062506886500)  {\tikz\pgfuseplotmark{m6cv};} ; % R Lep
+\node[stars,pin={[pin distance=-0.6\onedegree,Flaamsted]0:{T}}] at (axis cs:096.3041653170500,+07.0857107174700) {} ; % T Mon
+
+
+
+\node[pin={[pin distance=-0.2\onedegree,Bayer]90:{$\boldsymbol\alpha$}}] at (axis cs:{2.097},{29.090}) {}; % And,  2.06 
+\node[pin={[pin distance=-0.2\onedegree,Bayer]00:{$\boldsymbol\beta$}}] at (axis cs:{17.433},{35.620}) {}; % And,  2.08 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\delta$}}] at (axis cs:{9.832},{30.861}) {}; % And,  3.27 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\epsilon$}}] at (axis cs:{9.639},{29.312}) {}; % And,  4.35 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]305:{$\boldsymbol\eta$}}] at (axis cs:{14.302},{23.418}) {}; % And,  4.40 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\mu$}}] at (axis cs:{14.188},{38.499}) {}; % And,  3.87 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\pi$}}] at (axis cs:{9.220},{33.719}) {}; % And,  4.35 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\rho$}}] at (axis cs:{5.280},{37.969}) {}; % And,  5.16 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]270:{$\boldsymbol\sigma$}}] at (axis cs:{4.582},{36.785}) {}; % And,  4.51 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\vartheta$}}] at (axis cs:{4.273},{38.681}) {}; % And,  4.62 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\zeta$}}] at (axis cs:{11.835},{24.267}) {}; % And,  4.09 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{28}}] at (axis cs:{7.531},{29.752}) {}; % And,  5.22 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{32}}] at (axis cs:{10.280},{39.459}) {}; % And,  5.31 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{36}}] at (axis cs:{13.742},{23.628}) {}; % And,  5.50 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{45}}] at (axis cs:{17.793},{37.724}) {}; % And,  5.79 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{47}}] at (axis cs:{20.919},{37.715}) {}; % And,  5.59 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{56}}] at (axis cs:{29.039},{37.252}) {}; % And,  5.69 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{58}}] at (axis cs:{32.122},{37.859}) {}; % And,  4.79 
+\node[pin={[pin distance=-0.2\onedegree,Bayer]00:{$\boldsymbol\alpha$}}] at (axis cs:{31.793},{23.462}) {}; % Ari,  2.02 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\beta$}}] at (axis cs:{28.660},{20.808}) {}; % Ari,  2.66 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\delta$}}] at (axis cs:{47.907},{19.727}) {}; % Ari,  4.35 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\epsilon$}}] at (axis cs:{44.803},{21.340}) {}; % Ari,  4.63 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\epsilon$}}] at (axis cs:{44.803},{21.340}) {}; % Ari,  4.63 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\eta$}}] at (axis cs:{33.200},{21.211}) {}; % Ari,  5.23 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\gamma$}}] at (axis cs:{28.383},{19.296}) {}; % Ari,  4.64 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\iota$}}] at (axis cs:{29.338},{17.818}) {}; % Ari,  5.10 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\kappa$}}] at (axis cs:{31.641},{22.648}) {}; % Ari,  5.03 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\lambda$}}] at (axis cs:{29.482},{23.596}) {}; % Ari,  4.77 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\mu$}}] at (axis cs:{40.591},{20.011}) {}; % Ari,  5.74 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\nu$}}] at (axis cs:{39.704},{21.961}) {}; % Ari,  5.45 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\omicron$}}] at (axis cs:{41.137},{15.312}) {}; % Ari,  5.78 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\pi$}}] at (axis cs:{42.323},{17.464}) {}; % Ari,  5.32 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\rho^2$}}] at (axis cs:{43.952},{18.331}) {}; % Ari,  5.82 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\rho^3$}}] at (axis cs:{44.109},{18.023}) {}; % Ari,  5.59 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\sigma$}}] at (axis cs:{42.873},{15.082}) {}; % Ari,  5.52 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\tau^1$}}] at (axis cs:{50.307},{21.147}) {}; % Ari,  5.31 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\tau^2$}}] at (axis cs:{50.689},{20.742}) {}; % Ari,  5.08 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\vartheta$}}] at (axis cs:{34.531},{19.901}) {}; % Ari,  5.58 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\xi$}}] at (axis cs:{36.204},{10.610}) {}; % Ari,  5.48 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\zeta$}}] at (axis cs:{48.725},{21.044}) {}; % Ari,  4.88 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{10}}] at (axis cs:{30.914},{25.935}) {}; % Ari,  5.69 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{14}}] at (axis cs:{32.356},{25.940}) {}; % Ari,  4.98 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{15}}] at (axis cs:{32.657},{19.500}) {}; % Ari,  5.71 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{19}}] at (axis cs:{33.264},{15.280}) {}; % Ari,  5.71 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 1}}] at (axis cs:{27.536},{22.275}) {}; % Ari,  5.83 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{20}}] at (axis cs:{33.942},{25.783}) {}; % Ari,  5.79 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{21}}] at (axis cs:{33.928},{25.043}) {}; % Ari,  5.58 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{31}}] at (axis cs:{39.158},{12.447}) {}; % Ari,  5.65 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{33}}] at (axis cs:{40.171},{27.061}) {}; % Ari,  5.30 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{35}}] at (axis cs:{40.863},{27.707}) {}; % Ari,  4.65 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{38}}] at (axis cs:{41.240},{12.446}) {}; % Ari,  5.19 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{39}}] at (axis cs:{41.977},{29.247}) {}; % Ari,  4.52 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{40}}] at (axis cs:{42.134},{18.284}) {}; % Ari,  5.83 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{41}}] at (axis cs:{42.496},{27.260}) {}; % Ari,  3.62 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{47}}] at (axis cs:{44.522},{20.669}) {}; % Ari,  5.80 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{49}}] at (axis cs:{45.476},{26.462}) {}; % Ari,  5.92 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{ 4}}] at (axis cs:{27.046},{16.955}) {}; % Ari,  5.86 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{52}}] at (axis cs:{46.361},{25.255}) {}; % Ari,  5.46 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{55}}] at (axis cs:{47.403},{29.077}) {}; % Ari,  5.75 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{56}}] at (axis cs:{48.059},{27.257}) {}; % Ari,  5.78 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{59}}] at (axis cs:{49.982},{27.071}) {}; % Ari,  5.92 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{62}}] at (axis cs:{50.550},{27.607}) {}; % Ari,  5.55 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{64}}] at (axis cs:{51.077},{24.724}) {}; % Ari,  5.50 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 7}}] at (axis cs:{28.963},{23.577}) {}; % Ari,  5.75 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\chi$}}] at (axis cs:{83.182},{32.192}) {}; % Aur,  4.74 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\iota$}}] at (axis cs:{74.248},{33.166}) {}; % Aur,  2.68 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\kappa$}}] at (axis cs:{93.845},{29.498}) {}; % Aur,  4.33 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\mu$}}] at (axis cs:{78.357},{38.484}) {}; % Aur,  4.83 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\nu$}}] at (axis cs:{87.872},{39.148}) {}; % Aur,  3.97 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\omega$}}] at (axis cs:{74.814},{37.890}) {}; % Aur,  4.99 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-135:{$\boldsymbol\psi^3$}}] at (axis cs:{99.705},{39.903}) {}; % Aur,  5.35 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\sigma$}}] at (axis cs:{81.163},{37.385}) {}; % Aur,  4.99 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\tau$}}] at (axis cs:{87.293},{39.181}) {}; % Aur,  4.52 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\upsilon$}}] at (axis cs:{87.760},{37.305}) {}; % Aur,  4.73 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\varphi$}}] at (axis cs:{81.912},{34.476}) {}; % Aur,  5.06 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\vartheta$}}] at (axis cs:{89.930},{37.212}) {}; % Aur,  2.65 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{14}}] at (axis cs:{78.852},{32.688}) {}; % Aur,  4.99 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{16}}] at (axis cs:{79.544},{33.372}) {}; % Aur,  4.54 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{19}}] at (axis cs:{80.004},{33.958}) {}; % Aur,  5.04 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{26}}] at (axis cs:{84.659},{30.492}) {}; % Aur,  5.41 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 2}}] at (axis cs:{73.158},{36.703}) {}; % Aur,  4.78 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{40}}] at (axis cs:{91.646},{38.482}) {}; % Aur,  5.35 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{RT}}] at (axis cs:{97.142},{30.493}) {}; % Aur,  5.75 
+%\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{48}}] at (axis cs:{97.142},{30.493}) {}; % Aur,  5.75 = RT
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{49}}] at (axis cs:{98.800},{28.022}) {}; % Aur,  5.27 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{51}}] at (axis cs:{99.665},{39.391}) {}; % Aur,  5.70 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{53}}] at (axis cs:{99.596},{28.984}) {}; % Aur,  5.75 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 5}}] at (axis cs:{75.076},{39.395}) {}; % Aur,  5.98 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{63}}] at (axis cs:{107.914},{39.320}) {}; % Aur,  4.89 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\beta$}}] at (axis cs:{70.515},{-37.144}) {}; % Cae,  5.04 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\gamma^1$}}] at (axis cs:{76.102},{-35.483}) {}; % Cae,  4.57 
+
+
+\node[pin={[pin distance=-0.2\onedegree,Bayer]00:{$\boldsymbol\beta$}}] at (axis cs:{10.897},{-17.987}) {}; % Cet,  2.05 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\alpha$}}] at (axis cs:{45.570},{4.090}) {}; % Cet,  2.55 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\chi$}}] at (axis cs:{27.396},{-10.686}) {}; % Cet,  4.66 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\delta$}}] at (axis cs:{39.871},{0.328}) {}; % Cet,  4.07 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\epsilon$}}] at (axis cs:{39.891},{-11.872}) {}; % Cet,  4.83 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\eta$}}] at (axis cs:{17.147},{-10.182}) {}; % Cet,  3.46 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\gamma$}}] at (axis cs:{40.825},{3.236}) {}; % Cet,  3.47 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\iota$}}] at (axis cs:{4.857},{-8.824}) {}; % Cet,  3.55 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\kappa^1$}}] at (axis cs:{49.840},{3.370}) {}; % Cet,  4.85 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\kappa^2$}}] at (axis cs:{50.278},{3.675}) {}; % Cet,  5.68 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\lambda$}}] at (axis cs:{44.929},{8.907}) {}; % Cet,  4.71 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\mu$}}] at (axis cs:{41.236},{10.114}) {}; % Cet,  4.27 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\nu$}}] at (axis cs:{38.969},{5.593}) {}; % Cet,  4.88 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\omicron$}}] at (axis cs:{34.837},{-2.977}) {}; % Cet,  4.95 
+\node[pin={[pin distance=-0.4\onedegree,interest-label]-90:{Mira}}] at (axis cs:{34.837},{-2.977}) {}; % Cet,  4.95 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\pi$}}] at (axis cs:{41.031},{-13.859}) {}; % Cet,  4.25 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\rho$}}] at (axis cs:{36.488},{-12.290}) {}; % Cet,  4.88 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\sigma$}}] at (axis cs:{38.022},{-15.244}) {}; % Cet,  4.74 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\tau$}}] at (axis cs:{26.017},{-15.937}) {}; % Cet,  3.49 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\upsilon$}}] at (axis cs:{30.001},{-21.078}) {}; % Cet,  4.00 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\varphi^1$}}] at (axis cs:{11.048},{-10.609}) {}; % Cet,  4.77 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\varphi^2$}}] at (axis cs:{12.532},{-10.644}) {}; % Cet,  5.17 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\varphi^3$}}] at (axis cs:{14.006},{-11.266}) {}; % Cet,  5.34 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\varphi^4$}}] at (axis cs:{14.683},{-11.380}) {}; % Cet,  5.62 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\vartheta$}}] at (axis cs:{21.006},{-8.183}) {}; % Cet,  3.61 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\xi^1$}}] at (axis cs:{33.250},{8.846}) {}; % Cet,  4.37 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\xi^2$}}] at (axis cs:{37.040},{8.460}) {}; % Cet,  4.28 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\zeta$}}] at (axis cs:{27.865},{-10.335}) {}; % Cet,  3.73 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{12}}] at (axis cs:{7.510},{-3.957}) {}; % Cet,  5.73 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{13}}] at (axis cs:{8.812},{-3.593}) {}; % Cet,  5.20 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{14}}] at (axis cs:{8.887},{-0.506}) {}; % Cet,  5.94 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{20}}] at (axis cs:{13.252},{-1.144}) {}; % Cet,  4.76 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{25}}] at (axis cs:{15.761},{-4.837}) {}; % Cet,  5.40 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{28}}] at (axis cs:{16.521},{-9.839}) {}; % Cet,  5.58 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 2}}] at (axis cs:{0.935},{-17.336}) {}; % Cet,  4.55 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{30}}] at (axis cs:{16.943},{-9.786}) {}; % Cet,  5.71 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{33}}] at (axis cs:{17.640},{2.445}) {}; % Cet,  5.95 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{34}}] at (axis cs:{17.931},{-2.251}) {}; % Cet,  5.93 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{37}}] at (axis cs:{18.600},{-7.923}) {}; % Cet,  5.15 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{38}}] at (axis cs:{18.705},{-0.974}) {}; % Cet,  5.70 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{39}}] at (axis cs:{19.151},{-2.500}) {}; % Cet,  5.43 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 3}}] at (axis cs:{1.125},{-10.509}) {}; % Cet,  4.94 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{46}}] at (axis cs:{21.405},{-14.599}) {}; % Cet,  4.91 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{47}}] at (axis cs:{21.715},{-13.056}) {}; % Cet,  5.51 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{48}}] at (axis cs:{22.401},{-21.629}) {}; % Cet,  5.11 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{49}}] at (axis cs:{23.657},{-15.676}) {}; % Cet,  5.62 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{50}}] at (axis cs:{23.996},{-15.400}) {}; % Cet,  5.41 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{56}}] at (axis cs:{29.167},{-22.527}) {}; % Cet,  4.90 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{57}}] at (axis cs:{29.942},{-20.824}) {}; % Cet,  5.44 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{60}}] at (axis cs:{30.799},{0.128}) {}; % Cet,  5.43 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{61}}] at (axis cs:{30.951},{-0.340}) {}; % Cet,  5.95 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{63}}] at (axis cs:{32.899},{-1.825}) {}; % Cet,  5.94 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{64}}] at (axis cs:{32.838},{8.570}) {}; % Cet,  5.64 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{66}}] at (axis cs:{33.198},{-2.393}) {}; % Cet,  5.65 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{67}}] at (axis cs:{34.246},{-6.422}) {}; % Cet,  5.50 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{69}}] at (axis cs:{35.486},{0.395}) {}; % Cet,  5.30 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 6}}] at (axis cs:{2.816},{-15.468}) {}; % Cet,  4.90 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{70}}] at (axis cs:{35.552},{-0.885}) {}; % Cet,  5.43 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{75}}] at (axis cs:{38.039},{-1.035}) {}; % Cet,  5.36 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{77}}] at (axis cs:{38.678},{-7.859}) {}; % Cet,  5.73 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 7}}] at (axis cs:{3.660},{-18.933}) {}; % Cet,  4.46 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{80}}] at (axis cs:{39.000},{-7.831}) {}; % Cet,  5.53 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{81}}] at (axis cs:{39.424},{-3.396}) {}; % Cet,  5.65 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{84}}] at (axis cs:{40.308},{-0.695}) {}; % Cet,  5.76 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{93}}] at (axis cs:{45.594},{4.353}) {}; % Cet,  5.62 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{94}}] at (axis cs:{48.193},{-1.196}) {}; % Cet,  5.07 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{95}}] at (axis cs:{49.593},{-0.930}) {}; % Cet,  5.42 
+
+\node[pin={[pin distance=-0.2\onedegree,Bayer]00:{$\boldsymbol\alpha$}}] at (axis cs:{101.287},{-16.716}) {}; % CMa, -1.44 
+\node[pin={[pin distance=-0.2\onedegree,Bayer]00:{$\boldsymbol\beta$}}] at (axis cs:{95.675},{-17.956}) {}; % CMa,  1.96 
+\node[pin={[pin distance=-0.2\onedegree,Bayer]00:{$\boldsymbol\delta$}}] at (axis cs:{107.098},{-26.393}) {}; % CMa,  1.84 
+\node[pin={[pin distance=-0.2\onedegree,Bayer]00:{$\boldsymbol\epsilon$}}] at (axis cs:{104.656},{-28.972}) {}; % CMa,  1.53 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\gamma$}}] at (axis cs:{105.940},{-15.633}) {}; % CMa,  4.11 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\iota$}}] at (axis cs:{104.034},{-17.054}) {}; % CMa,  4.39 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\kappa$}}] at (axis cs:{102.460},{-32.508}) {}; % CMa,  3.53 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\lambda$}}] at (axis cs:{97.043},{-32.580}) {}; % CMa,  4.47 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\mu$}}] at (axis cs:{104.028},{-14.043}) {}; % CMa,  4.97 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\nu^1$}}] at (axis cs:{99.095},{-18.660}) {}; % CMa,  5.70 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\nu^2$}}] at (axis cs:{99.171},{-19.256}) {}; % CMa,  3.95 
+\node[pin={[pin distance=-0.8\onedegree,Bayer]20:{$\boldsymbol\nu^3$}}] at (axis cs:{99.473},{-18.237}) {}; % CMa,  4.43 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\omega$}}] at (axis cs:{108.703},{-26.773}) {}; % CMa,  4.04 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\omicron^1$}}] at (axis cs:{103.533},{-24.184}) {}; % CMa,  3.84 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\omicron^2$}}] at (axis cs:{105.756},{-23.833}) {}; % CMa,  3.04 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\pi$}}] at (axis cs:{103.906},{-20.136}) {}; % CMa,  4.68 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\sigma$}}] at (axis cs:{105.430},{-27.935}) {}; % CMa,  3.47 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\tau$}}] at (axis cs:{109.677},{-24.954}) {}; % CMa,  4.40 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\vartheta$}}] at (axis cs:{103.547},{-12.039}) {}; % CMa,  4.07 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\xi^1$}}] at (axis cs:{97.964},{-23.418}) {}; % CMa,  4.33 
+\node[pin={[pin distance=-0.8\onedegree,Bayer]20:{$\boldsymbol\xi^2$}}] at (axis cs:{98.764},{-22.965}) {}; % CMa,  4.53 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\zeta$}}] at (axis cs:{95.078},{-30.063}) {}; % CMa,  3.02 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{10}}] at (axis cs:{101.119},{-31.070}) {}; % CMa,  5.23 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{11}}] at (axis cs:{101.713},{-14.426}) {}; % CMa,  5.28 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{15}}] at (axis cs:{103.387},{-20.224}) {}; % CMa,  4.82 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{17}}] at (axis cs:{103.761},{-20.405}) {}; % CMa,  5.80 
+%\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{26}}] at (axis cs:{108.051},{-25.942}) {}; % CMa,  5.91 
+\node[pin={[pin distance=-0.8\onedegree,Flaamsted]105:{27}}] at (axis cs:{108.563},{-26.352}) {}; % CMa,  4.45 
+\node[pin={[pin distance=-0.8\onedegree,Flaamsted]90:{29}}] at (axis cs:{109.668},{-24.559}) {}; % CMa,  4.92 
+
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\alpha$}}] at (axis cs:{84.912},{-34.074}) {}; % Col,  2.66 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\beta$}}] at (axis cs:{87.740},{-35.768}) {}; % Col,  3.11 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\delta$}}] at (axis cs:{95.528},{-33.436}) {}; % Col,  3.85 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\epsilon$}}] at (axis cs:{82.803},{-35.470}) {}; % Col,  3.87 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\gamma$}}] at (axis cs:{89.384},{-35.283}) {}; % Col,  4.36 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\kappa$}}] at (axis cs:{94.138},{-35.140}) {}; % Col,  4.37 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\lambda$}}] at (axis cs:{88.279},{-33.801}) {}; % Col,  4.87 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\mu$}}] at (axis cs:{86.500},{-32.306}) {}; % Col,  5.16 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\nu^2$}}] at (axis cs:{84.436},{-28.690}) {}; % Col,  5.28 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\omicron$}}] at (axis cs:{79.371},{-34.895}) {}; % Col,  4.82 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\sigma$}}] at (axis cs:{89.087},{-31.382}) {}; % Col,  5.52 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\vartheta$}}] at (axis cs:{91.882},{-37.253}) {}; % Col,  5.00 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\xi$}}] at (axis cs:{88.875},{-37.121}) {}; % Col,  4.96 
+
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\beta$}}] at (axis cs:{76.962},{-5.086}) {}; % Eri,  2.79 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\delta$}}] at (axis cs:{55.812},{-9.763}) {}; % Eri,  3.53 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\epsilon$}}] at (axis cs:{53.233},{-9.458}) {}; % Eri,  3.73 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\eta$}}] at (axis cs:{44.107},{-8.898}) {}; % Eri,  3.90 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\gamma$}}] at (axis cs:{59.507},{-13.508}) {}; % Eri,  2.96 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\iota$}}] at (axis cs:{40.167},{-39.855}) {}; % Eri,  4.12 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\lambda$}}] at (axis cs:{77.287},{-8.754}) {}; % Eri,  4.26 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\mu$}}] at (axis cs:{71.376},{-3.255}) {}; % Eri,  4.02 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\nu$}}] at (axis cs:{69.080},{-3.352}) {}; % Eri,  3.93 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\omega$}}] at (axis cs:{73.224},{-5.453}) {}; % Eri,  4.38 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\omicron^1$}}] at (axis cs:{62.966},{-6.838}) {}; % Eri,  4.04 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\omicron^2$}}] at (axis cs:{63.818},{-7.653}) {}; % Eri,  4.42 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\pi$}}] at (axis cs:{56.536},{-12.102}) {}; % Eri,  4.43 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\rho^1$}}] at (axis cs:{45.292},{-7.663}) {}; % Eri,  5.75 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\rho^2$}}] at (axis cs:{45.676},{-7.685}) {}; % Eri,  5.33 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\rho^3$}}] at (axis cs:{46.069},{-7.601}) {}; % Eri,  5.26 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\psi$}}] at (axis cs:{75.360},{-7.174}) {}; % Eri,  4.79 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\tau^1$}}] at (axis cs:{41.276},{-18.572}) {}; % Eri,  4.47 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\tau^2$}}] at (axis cs:{42.760},{-21.004}) {}; % Eri,  4.77 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\tau^3$}}] at (axis cs:{45.598},{-23.624}) {}; % Eri,  4.09 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\tau^4$}}] at (axis cs:{49.879},{-21.758}) {}; % Eri,  3.74 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\tau^5$}}] at (axis cs:{53.447},{-21.633}) {}; % Eri,  4.27 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\tau^6$}}] at (axis cs:{56.712},{-23.249}) {}; % Eri,  4.22 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\tau^7$}}] at (axis cs:{56.915},{-23.875}) {}; % Eri,  5.24 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\tau^8$}}] at (axis cs:{58.428},{-24.612}) {}; % Eri,  4.64 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\tau^9$}}] at (axis cs:{59.981},{-24.016}) {}; % Eri,  4.63 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\upsilon^1$}}] at (axis cs:{68.377},{-29.766}) {}; % Eri,  4.51 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\upsilon^2$}}] at (axis cs:{68.888},{-30.562}) {}; % Eri,  3.81 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\upsilon^4$}}] at (axis cs:{64.474},{-33.798}) {}; % Eri,  3.56 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\xi$}}] at (axis cs:{65.920},{-3.745}) {}; % Eri,  5.17 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\zeta$}}] at (axis cs:{48.958},{-8.820}) {}; % Eri,  4.81 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{15}}] at (axis cs:{49.592},{-22.511}) {}; % Eri,  4.87 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{17}}] at (axis cs:{52.654},{-5.075}) {}; % Eri,  4.74 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{20}}] at (axis cs:{54.073},{-17.467}) {}; % Eri,  5.25 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{21}}] at (axis cs:{54.755},{-5.626}) {}; % Eri,  5.97 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{22}}] at (axis cs:{55.160},{-5.211}) {}; % Eri,  5.53 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{24}}] at (axis cs:{56.127},{-1.163}) {}; % Eri,  5.24 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{25}}] at (axis cs:{56.235},{-0.297}) {}; % Eri,  5.56 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{30}}] at (axis cs:{58.174},{-5.361}) {}; % Eri,  5.49 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{32}}] at (axis cs:{58.573},{-2.955}) {}; % Eri,  4.72 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{35}}] at (axis cs:{60.384},{-1.549}) {}; % Eri,  5.28 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{37}}] at (axis cs:{62.594},{-6.924}) {}; % Eri,  5.44 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{39}}] at (axis cs:{63.599},{-10.256}) {}; % Eri,  4.90 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{43}}] at (axis cs:{66.009},{-34.017}) {}; % Eri,  3.96 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{45}}] at (axis cs:{67.969},{-0.044}) {}; % Eri,  4.90 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{46}}] at (axis cs:{68.478},{-6.739}) {}; % Eri,  5.73 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{47}}] at (axis cs:{68.548},{-8.231}) {}; % Eri,  5.20 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 4}}] at (axis cs:{44.349},{-23.862}) {}; % Eri,  5.44 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{51}}] at (axis cs:{69.401},{-2.473}) {}; % Eri,  5.22 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{53}}] at (axis cs:{69.545},{-14.304}) {}; % Eri,  3.87 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{54}}] at (axis cs:{70.110},{-19.671}) {}; % Eri,  4.34 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{56}}] at (axis cs:{71.022},{-8.504}) {}; % Eri,  5.78 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{58}}] at (axis cs:{71.901},{-16.934}) {}; % Eri,  5.49 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{59}}] at (axis cs:{72.136},{-16.329}) {}; % Eri,  5.76 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 5}}] at (axis cs:{44.921},{-2.465}) {}; % Eri,  5.55 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{60}}] at (axis cs:{72.548},{-16.217}) {}; % Eri,  5.03 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{62}}] at (axis cs:{74.101},{-5.171}) {}; % Eri,  5.50 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{63}}] at (axis cs:{74.960},{-10.263}) {}; % Eri,  5.39 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{64}}] at (axis cs:{74.982},{-12.537}) {}; % Eri,  4.78 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{S}}] at (axis cs:{74.982},{-12.537}) {}; % Eri,  4.78 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{66}}] at (axis cs:{76.690},{-4.655}) {}; % Eri,  5.10 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{68}}] at (axis cs:{77.182},{-4.456}) {}; % Eri,  5.12 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{ 6}}] at (axis cs:{44.524},{-23.606}) {}; % Eri,  5.81 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\alpha$}}] at (axis cs:{48.019},{-28.988}) {}; % For,  3.80 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\beta$}}] at (axis cs:{42.273},{-32.406}) {}; % For,  4.46 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\chi^2$}}] at (axis cs:{51.889},{-35.681}) {}; % For,  5.70 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\delta$}}] at (axis cs:{55.562},{-31.938}) {}; % For,  4.98 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\epsilon$}}] at (axis cs:{45.407},{-28.091}) {}; % For,  5.88 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\eta^2$}}] at (axis cs:{42.562},{-35.843}) {}; % For,  5.93 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\eta^3$}}] at (axis cs:{42.668},{-35.676}) {}; % For,  5.48 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\gamma^2$}}] at (axis cs:{42.476},{-27.942}) {}; % For,  5.39 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\iota^1$}}] at (axis cs:{39.039},{-30.045}) {}; % For,  5.73 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\iota^2$}}] at (axis cs:{39.578},{-30.194}) {}; % For,  5.84 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\kappa$}}] at (axis cs:{35.636},{-23.816}) {}; % For,  5.20 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\lambda^1$}}] at (axis cs:{38.279},{-34.650}) {}; % For,  5.90 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\lambda^2$}}] at (axis cs:{39.244},{-34.578}) {}; % For,  5.78 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\mu$}}] at (axis cs:{33.227},{-30.724}) {}; % For,  5.27 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\nu$}}] at (axis cs:{31.123},{-29.297}) {}; % For,  4.70 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\omega$}}] at (axis cs:{38.461},{-28.232}) {}; % For,  4.97 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\pi$}}] at (axis cs:{30.311},{-30.002}) {}; % For,  5.36 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\rho$}}] at (axis cs:{56.984},{-30.168}) {}; % For,  5.53 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\psi$}}] at (axis cs:{43.393},{-38.437}) {}; % For,  5.93 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\sigma$}}] at (axis cs:{56.614},{-29.338}) {}; % For,  5.92 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\varphi$}}] at (axis cs:{37.007},{-33.811}) {}; % For,  5.13 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\zeta$}}] at (axis cs:{44.901},{-25.274}) {}; % For,  5.70 
+\node[pin={[pin distance=-0.2\onedegree,Bayer]00:{$\boldsymbol\gamma$}}] at (axis cs:{99.428},{16.399}) {}; % Gem,  2.02 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\epsilon$}}] at (axis cs:{100.983},{25.131}) {}; % Gem,  3.01 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\eta$}}] at (axis cs:{93.719},{22.507}) {}; % Gem,  3.30 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\lambda$}}] at (axis cs:{109.523},{16.540}) {}; % Gem,  3.58 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\mu$}}] at (axis cs:{95.740},{22.513}) {}; % Gem,  2.90 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\nu$}}] at (axis cs:{97.241},{20.212}) {}; % Gem,  4.14 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\omega$}}] at (axis cs:{105.603},{24.215}) {}; % Gem,  5.18 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\tau$}}] at (axis cs:{107.785},{30.245}) {}; % Gem,  4.39 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\vartheta$}}] at (axis cs:{103.197},{33.961}) {}; % Gem,  3.61 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\xi$}}] at (axis cs:{101.322},{12.895}) {}; % Gem,  3.34 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\zeta$}}] at (axis cs:{106.027},{20.570}) {}; % Gem,  4.01 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{ 1}}] at (axis cs:{91.030},{23.263}) {}; % Gem,  4.18 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{26}}] at (axis cs:{100.601},{17.645}) {}; % Gem,  5.29 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{28}}] at (axis cs:{101.189},{28.971}) {}; % Gem,  5.42 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{30}}] at (axis cs:{100.997},{13.228}) {}; % Gem,  4.49 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{33}}] at (axis cs:{102.458},{16.203}) {}; % Gem,  5.87 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{35}}] at (axis cs:{102.606},{13.413}) {}; % Gem,  5.68 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{36}}] at (axis cs:{102.888},{21.761}) {}; % Gem,  5.27 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{37}}] at (axis cs:{103.828},{25.376}) {}; % Gem,  5.75 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{38}}] at (axis cs:{103.661},{13.178}) {}; % Gem,  4.70 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 3}}] at (axis cs:{92.433},{23.113}) {}; % Gem,  5.76 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{41}}] at (axis cs:{105.066},{16.079}) {}; % Gem,  5.72 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{45}}] at (axis cs:{107.092},{15.930}) {}; % Gem,  5.49 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{47}}] at (axis cs:{107.846},{26.856}) {}; % Gem,  5.76 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{48}}] at (axis cs:{108.110},{24.128}) {}; % Gem,  5.85 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{51}}] at (axis cs:{108.343},{16.159}) {}; % Gem,  5.06 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{52}}] at (axis cs:{108.675},{24.885}) {}; % Gem,  5.84 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{53}}] at (axis cs:{108.988},{27.897}) {}; % Gem,  5.75 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{ 5}}] at (axis cs:{92.885},{24.420}) {}; % Gem,  5.83 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\alpha$}}] at (axis cs:{83.183},{-17.822}) {}; % Lep,  2.59 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\beta$}}] at (axis cs:{82.061},{-20.759}) {}; % Lep,  2.84 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\delta$}}] at (axis cs:{87.830},{-20.879}) {}; % Lep,  3.78 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\epsilon$}}] at (axis cs:{76.365},{-22.371}) {}; % Lep,  3.18 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\eta$}}] at (axis cs:{89.101},{-14.168}) {}; % Lep,  3.72 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\gamma$}}] at (axis cs:{86.116},{-22.448}) {}; % Lep,  3.60 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\iota$}}] at (axis cs:{78.075},{-11.869}) {}; % Lep,  4.47 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\kappa$}}] at (axis cs:{78.308},{-12.941}) {}; % Lep,  4.43 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\lambda$}}] at (axis cs:{79.894},{-13.177}) {}; % Lep,  4.28 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\mu$}}] at (axis cs:{78.233},{-16.205}) {}; % Lep,  3.29 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\nu$}}] at (axis cs:{79.996},{-12.315}) {}; % Lep,  5.29 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\vartheta$}}] at (axis cs:{91.539},{-14.935}) {}; % Lep,  4.67 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\zeta$}}] at (axis cs:{86.739},{-14.822}) {}; % Lep,  3.55 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{10}}] at (axis cs:{82.782},{-20.863}) {}; % Lep,  5.54 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{12}}] at (axis cs:{85.558},{-22.374}) {}; % Lep,  5.88 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{17}}] at (axis cs:{91.246},{-16.484}) {}; % Lep,  4.97 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{19}}] at (axis cs:{91.923},{-19.166}) {}; % Lep,  5.28 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 1}}] at (axis cs:{75.687},{-22.795}) {}; % Lep,  5.74 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 8}}] at (axis cs:{80.876},{-13.927}) {}; % Lep,  5.24 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\beta$}}] at (axis cs:{97.204},{-7.033}) {}; % Mon,  4.64 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\delta$}}] at (axis cs:{107.966},{-0.493}) {}; % Mon,  4.15 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\epsilon$}}] at (axis cs:{95.942},{4.593}) {}; % Mon,  4.41 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\gamma$}}] at (axis cs:{93.714},{-6.275}) {}; % Mon,  3.98 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{10}}] at (axis cs:{96.990},{-4.762}) {}; % Mon,  5.05 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{12}}] at (axis cs:{98.080},{4.856}) {}; % Mon,  5.85 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{13}}] at (axis cs:{98.226},{7.333}) {}; % Mon,  4.51 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{15}}] at (axis cs:{100.244},{9.896}) {}; % Mon,  4.67 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]0:{S}}] at (axis cs:{100.244},{9.896}) {}; % Mon,  4.67 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{16}}] at (axis cs:{101.635},{8.587}) {}; % Mon,  5.91 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{17}}] at (axis cs:{101.833},{8.037}) {}; % Mon,  4.77 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{18}}] at (axis cs:{101.965},{2.412}) {}; % Mon,  4.47 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]0:{19}}] at (axis cs:{105.728},{-4.239}) {}; % Mon,  4.98 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{20}}] at (axis cs:{107.557},{-4.237}) {}; % Mon,  4.92 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{21}}] at (axis cs:{107.848},{-0.302}) {}; % Mon,  5.43 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 2}}] at (axis cs:{89.768},{-9.558}) {}; % Mon,  5.04 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 3}}] at (axis cs:{90.460},{-10.598}) {}; % Mon,  5.00 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 7}}] at (axis cs:{94.928},{-7.823}) {}; % Mon,  5.26 
+
+\node[pin={[pin distance=-0.2\onedegree,Bayer]00:{$\boldsymbol\alpha$}}] at (axis cs:{88.793},{7.407}) {}; % Ori,  0.57 
+\node[pin={[pin distance=-0.2\onedegree,Bayer]00:{$\boldsymbol\beta$}}] at (axis cs:{78.634},{-8.202}) {}; % Ori,  0.28 
+\node[pin={[pin distance=-0.2\onedegree,Bayer]00:{$\boldsymbol\delta$}}] at (axis cs:{83.002},{-0.299}) {}; % Ori,  2.23 
+\node[pin={[pin distance=-0.8\onedegree,Bayer]45:{$\boldsymbol\epsilon$}}] at (axis cs:{84.053},{-1.202}) {}; % Ori,  1.72 
+\node[pin={[pin distance=-0.2\onedegree,Bayer]00:{$\boldsymbol\gamma$}}] at (axis cs:{81.283},{6.349}) {}; % Ori,  1.66 
+\node[pin={[pin distance=-0.2\onedegree,Bayer]00:{$\boldsymbol\kappa$}}] at (axis cs:{86.939},{-9.670}) {}; % Ori,  2.06 
+\node[pin={[pin distance=-0.2\onedegree,Bayer]00:{$\boldsymbol\zeta$}}] at (axis cs:{85.190},{-1.942}) {}; % Ori,  1.74 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\chi^1$}}] at (axis cs:{88.596},{20.276}) {}; % Ori,  4.40 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\chi^2$}}] at (axis cs:{90.980},{20.138}) {}; % Ori,  4.64 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\eta$}}] at (axis cs:{81.119},{-2.397}) {}; % Ori,  3.39 
+\node[pin={[pin distance=-0.2\onedegree,Bayer]-90:{$\boldsymbol\iota$}}] at (axis cs:{83.858},{-5.910}) {}; % Ori,  2.78 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\lambda$}}] at (axis cs:{83.784},{9.934}) {}; % Ori,  3.39 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\lambda$}}] at (axis cs:{83.785},{9.935}) {}; % Ori,  5.61 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\mu$}}] at (axis cs:{90.596},{9.647}) {}; % Ori,  4.13 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\nu$}}] at (axis cs:{91.893},{14.768}) {}; % Ori,  4.42 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\omega$}}] at (axis cs:{84.796},{4.121}) {}; % Ori,  4.54 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\omicron^1$}}] at (axis cs:{73.133},{14.251}) {}; % Ori,  4.74 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\omicron^2$}}] at (axis cs:{74.093},{13.514}) {}; % Ori,  4.08 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\pi^1$}}] at (axis cs:{73.724},{10.151}) {}; % Ori,  4.66 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\pi^2$}}] at (axis cs:{72.653},{8.900}) {}; % Ori,  4.36 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\pi^3$}}] at (axis cs:{72.460},{6.961}) {}; % Ori,  3.19 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\pi^4$}}] at (axis cs:{72.802},{5.605}) {}; % Ori,  3.68 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\pi^5$}}] at (axis cs:{73.563},{2.441}) {}; % Ori,  3.71 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\pi^6$}}] at (axis cs:{74.637},{1.714}) {}; % Ori,  4.46 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\rho$}}] at (axis cs:{78.323},{2.861}) {}; % Ori,  4.48 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\psi^1$}}] at (axis cs:{81.187},{1.846}) {}; % Ori,  4.89 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\psi^2$}}] at (axis cs:{81.709},{3.095}) {}; % Ori,  4.61 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\sigma$}}] at (axis cs:{84.687},{-2.600}) {}; % Ori,  3.80 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\tau$}}] at (axis cs:{79.402},{-6.844}) {}; % Ori,  3.60 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\upsilon$}}] at (axis cs:{82.983},{-7.302}) {}; % Ori,  4.61 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\varphi^1$}}] at (axis cs:{83.705},{9.489}) {}; % Ori,  4.41 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\varphi^2$}}] at (axis cs:{84.227},{9.291}) {}; % Ori,  4.09 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\vartheta$}}] at (axis cs:{83.819},{-5.390}) {}; % Ori,  5.13 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\xi$}}] at (axis cs:{92.985},{14.209}) {}; % Ori,  4.46 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{11}}] at (axis cs:{76.142},{15.404}) {}; % Ori,  4.67 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{14}}] at (axis cs:{76.970},{8.498}) {}; % Ori,  5.35 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{15}}] at (axis cs:{77.425},{15.597}) {}; % Ori,  4.82 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{16}}] at (axis cs:{77.332},{9.829}) {}; % Ori,  5.43 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{18}}] at (axis cs:{79.017},{11.341}) {}; % Ori,  5.53 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{21}}] at (axis cs:{79.797},{2.596}) {}; % Ori,  5.34 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{22}}] at (axis cs:{80.441},{-0.382}) {}; % Ori,  4.72 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{23}}] at (axis cs:{80.708},{3.544}) {}; % Ori,  4.98 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{27}}] at (axis cs:{81.120},{-0.891}) {}; % Ori,  5.07 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{29}}] at (axis cs:{80.987},{-7.808}) {}; % Ori,  4.14 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{31}}] at (axis cs:{82.433},{-1.092}) {}; % Ori,  4.70 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{32}}] at (axis cs:{82.696},{5.948}) {}; % Ori,  4.23 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{33}}] at (axis cs:{82.811},{3.292}) {}; % Ori,  5.46 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{35}}] at (axis cs:{83.476},{14.305}) {}; % Ori,  5.60 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{38}}] at (axis cs:{83.570},{3.767}) {}; % Ori,  5.33 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{42}}] at (axis cs:{83.847},{-4.838}) {}; % Ori,  4.60 
+\node[pin={[pin distance=-1.0\onedegree,Flaamsted]135:{45}}] at (axis cs:{83.915},{-4.856}) {}; % Ori,  5.24 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{49}}] at (axis cs:{84.721},{-7.213}) {}; % Ori,  4.79 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{51}}] at (axis cs:{85.619},{1.474}) {}; % Ori,  4.90 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{52}}] at (axis cs:{87.001},{6.454}) {}; % Ori,  5.30 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{55}}] at (axis cs:{87.842},{-7.518}) {}; % Ori,  5.35 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{56}}] at (axis cs:{88.110},{1.855}) {}; % Ori,  4.75 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{57}}] at (axis cs:{88.736},{19.749}) {}; % Ori,  5.91 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{59}}] at (axis cs:{89.602},{1.837}) {}; % Ori,  5.90 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{ 5}}] at (axis cs:{73.345},{2.508}) {}; % Ori,  5.33 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{60}}] at (axis cs:{89.707},{0.553}) {}; % Ori,  5.22 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{63}}] at (axis cs:{91.242},{5.420}) {}; % Ori,  5.66 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{64}}] at (axis cs:{90.864},{19.690}) {}; % Ori,  5.15 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{66}}] at (axis cs:{91.243},{4.159}) {}; % Ori,  5.63 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{68}}] at (axis cs:{93.006},{19.790}) {}; % Ori,  5.76 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{69}}] at (axis cs:{93.014},{16.130}) {}; % Ori,  4.96 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 6}}] at (axis cs:{73.695},{11.426}) {}; % Ori,  5.19 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]190:{71}}] at (axis cs:{93.712},{19.156}) {}; % Ori,  5.21 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{72}}] at (axis cs:{93.855},{16.143}) {}; % Ori,  5.34 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{73}}] at (axis cs:{93.937},{12.551}) {}; % Ori,  5.48 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{74}}] at (axis cs:{94.111},{12.272}) {}; % Ori,  5.04 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{75}}] at (axis cs:{94.278},{9.942}) {}; % Ori,  5.40 
+
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\chi$}}] at (axis cs:{3.651},{20.207}) {}; % Peg,  4.80 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\gamma$}}] at (axis cs:{3.309},{15.184}) {}; % Peg,  2.83 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{85}}] at (axis cs:{0.542},{27.082}) {}; % Peg,  5.80 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{86}}] at (axis cs:{1.425},{13.396}) {}; % Peg,  5.55 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{87}}] at (axis cs:{2.260},{18.212}) {}; % Peg,  5.56 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\omega$}}] at (axis cs:{47.822},{39.611}) {}; % Per,  4.61 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\omicron$}}] at (axis cs:{56.080},{32.288}) {}; % Per,  3.86 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\pi$}}] at (axis cs:{44.690},{39.663}) {}; % Per,  4.69 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\rho$}}] at (axis cs:{46.294},{38.840}) {}; % Per,  3.41 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\xi$}}] at (axis cs:{59.741},{35.791}) {}; % Per,  4.05 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\zeta$}}] at (axis cs:{58.533},{31.884}) {}; % Per,  2.88 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{16}}] at (axis cs:{42.646},{38.319}) {}; % Per,  4.22 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{17}}] at (axis cs:{42.878},{35.060}) {}; % Per,  4.55 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{20}}] at (axis cs:{43.428},{38.337}) {}; % Per,  5.35 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{21}}] at (axis cs:{44.322},{31.934}) {}; % Per,  5.10 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{24}}] at (axis cs:{44.765},{35.183}) {}; % Per,  4.94 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{40}}] at (axis cs:{55.594},{33.965}) {}; % Per,  4.98 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{42}}] at (axis cs:{57.386},{33.091}) {}; % Per,  5.15 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{50}}] at (axis cs:{62.153},{38.040}) {}; % Per,  5.52 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{54}}] at (axis cs:{65.103},{34.567}) {}; % Per,  4.93 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{55}}] at (axis cs:{66.121},{34.131}) {}; % Per,  5.73 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{56}}] at (axis cs:{66.156},{33.960}) {}; % Per,  5.79 
+
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\alpha$}}] at (axis cs:{30.511},{2.764}) {}; % Psc,  3.82 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\alpha$}}] at (axis cs:{30.512},{2.764}) {}; % Psc,  3.82 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\chi$}}] at (axis cs:{17.863},{21.035}) {}; % Psc,  4.66 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\delta$}}] at (axis cs:{12.171},{7.585}) {}; % Psc,  4.42 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\epsilon$}}] at (axis cs:{15.736},{7.890}) {}; % Psc,  4.28 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\eta$}}] at (axis cs:{22.871},{15.346}) {}; % Psc,  3.63 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\mu$}}] at (axis cs:{22.546},{6.144}) {}; % Psc,  4.84 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\nu$}}] at (axis cs:{25.358},{5.488}) {}; % Psc,  4.44 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\omicron$}}] at (axis cs:{26.348},{9.158}) {}; % Psc,  4.27 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\pi$}}] at (axis cs:{24.275},{12.141}) {}; % Psc,  5.55 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\rho$}}] at (axis cs:{21.564},{19.172}) {}; % Psc,  5.35 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\psi^1$}}] at (axis cs:{16.424},{21.465}) {}; % Psc,  5.54 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\psi^2$}}] at (axis cs:{16.988},{20.739}) {}; % Psc,  5.57 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\psi^3$}}] at (axis cs:{17.455},{19.658}) {}; % Psc,  5.56 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\sigma$}}] at (axis cs:{15.705},{31.804}) {}; % Psc,  5.50 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\tau$}}] at (axis cs:{17.915},{30.090}) {}; % Psc,  4.52 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\upsilon$}}] at (axis cs:{19.867},{27.264}) {}; % Psc,  4.75 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\varphi$}}] at (axis cs:{18.437},{24.584}) {}; % Psc,  4.67 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]0:{$\boldsymbol\xi$}}] at (axis cs:{28.389},{3.187}) {}; % Psc,  4.62 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\zeta$}}] at (axis cs:{18.433},{7.575}) {}; % Psc,  5.20 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{105}}] at (axis cs:{24.920},{16.406}) {}; % Psc,  5.99 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{107}}] at (axis cs:{25.624},{20.268}) {}; % Psc,  5.24 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{112}}] at (axis cs:{30.038},{3.097}) {}; % Psc,  5.88 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{29}}] at (axis cs:{0.456},{-3.027}) {}; % Psc,  5.13 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{30}}] at (axis cs:{0.490},{-6.014}) {}; % Psc,  4.40 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{32}}] at (axis cs:{0.624},{8.485}) {}; % Psc,  5.70 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{33}}] at (axis cs:{1.334},{-5.707}) {}; % Psc,  4.62 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{34}}] at (axis cs:{2.509},{11.146}) {}; % Psc,  5.54 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{41}}] at (axis cs:{5.149},{8.190}) {}; % Psc,  5.38 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{44}}] at (axis cs:{6.351},{1.940}) {}; % Psc,  5.77 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{47}}] at (axis cs:{7.012},{17.893}) {}; % Psc,  5.06 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{51}}] at (axis cs:{8.099},{6.955}) {}; % Psc,  5.67 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{52}}] at (axis cs:{8.148},{20.294}) {}; % Psc,  5.37 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{53}}] at (axis cs:{9.197},{15.231}) {}; % Psc,  5.88 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{54}}] at (axis cs:{9.841},{21.250}) {}; % Psc,  5.88 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{55}}] at (axis cs:{9.982},{21.438}) {}; % Psc,  5.43 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{57}}] at (axis cs:{11.637},{15.475}) {}; % Psc,  5.41 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{58}}] at (axis cs:{11.756},{11.974}) {}; % Psc,  5.51 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{60}}] at (axis cs:{11.848},{6.741}) {}; % Psc,  5.98 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{62}}] at (axis cs:{12.073},{7.300}) {}; % Psc,  5.92 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{64}}] at (axis cs:{12.245},{16.941}) {}; % Psc,  5.07 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{65}}] at (axis cs:{12.470},{27.711}) {}; % Psc,  5.55 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{65}}] at (axis cs:{12.472},{27.710}) {}; % Psc,  5.55 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{66}}] at (axis cs:{13.647},{19.188}) {}; % Psc,  5.80 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{68}}] at (axis cs:{14.459},{28.992}) {}; % Psc,  5.43 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{72}}] at (axis cs:{16.272},{14.946}) {}; % Psc,  5.64 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{80}}] at (axis cs:{17.092},{5.650}) {}; % Psc,  5.51 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{82}}] at (axis cs:{17.778},{31.425}) {}; % Psc,  5.16 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{87}}] at (axis cs:{18.532},{16.133}) {}; % Psc,  5.97 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{89}}] at (axis cs:{19.450},{3.614}) {}; % Psc,  5.15 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{91}}] at (axis cs:{20.281},{28.738}) {}; % Psc,  5.22 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{94}}] at (axis cs:{21.674},{19.240}) {}; % Psc,  5.50 
+
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\pi$}}] at (axis cs:{109.286},{-37.097}) {}; % Pup,  2.71 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\alpha$}}] at (axis cs:{14.652},{-29.357}) {}; % Scl,  4.31 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\epsilon$}}] at (axis cs:{26.411},{-25.053}) {}; % Scl,  5.33 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\eta$}}] at (axis cs:{6.982},{-33.007}) {}; % Scl,  4.87 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\iota$}}] at (axis cs:{5.380},{-28.981}) {}; % Scl,  5.17 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\kappa^1$}}] at (axis cs:{2.338},{-27.988}) {}; % Scl,  5.44 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\kappa^2$}}] at (axis cs:{2.893},{-27.799}) {}; % Scl,  5.41 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\lambda^2$}}] at (axis cs:{11.050},{-38.422}) {}; % Scl,  5.90 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\pi$}}] at (axis cs:{25.536},{-32.327}) {}; % Scl,  5.26 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\sigma$}}] at (axis cs:{15.610},{-31.552}) {}; % Scl,  5.51 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\tau$}}] at (axis cs:{24.035},{-29.907}) {}; % Scl,  5.70 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\vartheta$}}] at (axis cs:{2.933},{-35.133}) {}; % Scl,  5.24 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\xi$}}] at (axis cs:{15.326},{-38.916}) {}; % Scl,  5.59 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\zeta$}}] at (axis cs:{0.583},{-29.720}) {}; % Scl,  5.04 
+
+\node[pin={[pin distance=-0.4\onedegree,Bayer]45:{$\boldsymbol\alpha$}}] at (axis cs:{68.980},{16.509}) {}; % Tau,  0.99 
+\node[pin={[pin distance=-0.2\onedegree,Bayer]-90:{$\boldsymbol\beta$}}] at (axis cs:{81.573},{28.607}) {}; % Tau,  1.68 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\chi$}}] at (axis cs:{65.646},{25.629}) {}; % Tau,  5.38 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\delta^{1,2,3}$}}] at (axis cs:{65.734},{17.542}) {}; % Tau,  3.76 
+%\node[pin={[pin distance=-0.8\onedegree,Bayer]180:{$\boldsymbol\delta^2$}}] at (axis cs:{66.024},{17.444}) {}; % Tau,  4.80 
+%\node[pin={[pin distance=-0.8\onedegree,Bayer]45:{$\boldsymbol\delta^3$}}] at (axis cs:{66.372},{17.928}) {}; % Tau,  4.31 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\epsilon$}}] at (axis cs:{67.154},{19.180}) {}; % Tau,  3.54 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\eta$}}] at (axis cs:{56.871},{24.105}) {}; % Tau,  2.87 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\gamma$}}] at (axis cs:{64.948},{15.627}) {}; % Tau,  3.65 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\iota$}}] at (axis cs:{75.774},{21.590}) {}; % Tau,  4.62 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\kappa$}}] at (axis cs:{66.342},{22.294}) {}; % Tau,  4.21 
+%\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\kappa^2$}}] at (axis cs:{66.354},{22.200}) {}; % Tau,  5.27 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\lambda$}}] at (axis cs:{60.170},{12.490}) {}; % Tau,  3.42 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\mu$}}] at (axis cs:{63.884},{8.892}) {}; % Tau,  4.29 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\nu$}}] at (axis cs:{60.789},{5.989}) {}; % Tau,  3.90 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\omega^1$}}] at (axis cs:{62.292},{19.609}) {}; % Tau,  5.51 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\omega^2$}}] at (axis cs:{64.315},{20.578}) {}; % Tau,  4.92 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\omicron$}}] at (axis cs:{51.203},{9.029}) {}; % Tau,  3.61 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\pi$}}] at (axis cs:{66.652},{14.714}) {}; % Tau,  4.69 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\rho$}}] at (axis cs:{68.462},{14.844}) {}; % Tau,  4.65 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\psi$}}] at (axis cs:{61.752},{29.001}) {}; % Tau,  5.22 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]-90:{$\boldsymbol\sigma$}}] at (axis cs:{69.788},{15.800}) {}; % Tau,  5.09 
+%\node[pin={[pin distance=-0.4\onedegree,Bayer]180:{$\boldsymbol\sigma^2$}}] at (axis cs:{69.819},{15.918}) {}; % Tau,  4.67 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\tau$}}] at (axis cs:{70.561},{22.957}) {}; % Tau,  4.27 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\upsilon$}}] at (axis cs:{66.577},{22.813}) {}; % Tau,  4.29 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\varphi$}}] at (axis cs:{65.088},{27.351}) {}; % Tau,  4.95 
+\node[pin={[pin distance=-0.8\onedegree,Bayer]12:{$\boldsymbol\vartheta$}}] at (axis cs:{67.0},{15.45}) {}; % Tau,  3.41 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\xi$}}] at (axis cs:{51.792},{9.732}) {}; % Tau,  3.73 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\zeta$}}] at (axis cs:{84.411},{21.142}) {}; % Tau,  3.00 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{103}}] at (axis cs:{77.028},{24.265}) {}; % Tau,  5.51 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{104}}] at (axis cs:{76.863},{18.645}) {}; % Tau,  4.92 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{105}}] at (axis cs:{76.981},{21.705}) {}; % Tau,  5.84 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{106}}] at (axis cs:{76.952},{20.418}) {}; % Tau,  5.29 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{109}}] at (axis cs:{79.819},{22.096}) {}; % Tau,  4.95 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{10}}] at (axis cs:{54.218},{0.402}) {}; % Tau,  4.30 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{111}}] at (axis cs:{81.106},{17.384}) {}; % Tau,  5.00 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{114}}] at (axis cs:{81.909},{21.937}) {}; % Tau,  4.88 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{115}}] at (axis cs:{81.792},{17.962}) {}; % Tau,  5.41 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{116}}] at (axis cs:{81.940},{15.874}) {}; % Tau,  5.52 
+%\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{117}}] at (axis cs:{82.007},{17.239}) {}; % Tau,  5.77 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{118}}] at (axis cs:{82.319},{25.150}) {}; % Tau,  5.85 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{119}}] at (axis cs:{83.053},{18.594}) {}; % Tau,  4.36 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{120}}] at (axis cs:{83.382},{18.540}) {}; % Tau,  5.67 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{121}}] at (axis cs:{83.863},{24.039}) {}; % Tau,  5.38 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{122}}] at (axis cs:{84.266},{17.040}) {}; % Tau,  5.53 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{125}}] at (axis cs:{84.934},{25.897}) {}; % Tau,  5.17 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{126}}] at (axis cs:{85.324},{16.534}) {}; % Tau,  4.84 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{12}}] at (axis cs:{54.963},{3.057}) {}; % Tau,  5.55 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{130}}] at (axis cs:{86.859},{17.729}) {}; % Tau,  5.48 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{131}}] at (axis cs:{86.805},{14.488}) {}; % Tau,  5.73 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{132}}] at (axis cs:{87.254},{24.568}) {}; % Tau,  4.89 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{133}}] at (axis cs:{86.929},{13.899}) {}; % Tau,  5.28 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{134}}] at (axis cs:{87.387},{12.651}) {}; % Tau,  4.88 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{136}}] at (axis cs:{88.332},{27.612}) {}; % Tau,  4.56 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{137}}] at (axis cs:{88.093},{14.172}) {}; % Tau,  5.60 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{139}}] at (axis cs:{89.499},{25.954}) {}; % Tau,  4.83 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{13}}] at (axis cs:{55.579},{19.700}) {}; % Tau,  5.69 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{16}}] at (axis cs:{56.201},{24.289}) {}; % Tau,  5.46 
+\node[pin={[pin distance=-0.8\onedegree,Flaamsted]-45:{17}}] at (axis cs:{56.219},{24.113}) {}; % Tau,  3.71 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{18}}] at (axis cs:{56.291},{24.839}) {}; % Tau,  5.66 
+\node[pin={[pin distance=-0.8\onedegree,Flaamsted]45:{19}}] at (axis cs:{56.302},{24.467}) {}; % Tau,  4.30 
+%\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{20}}] at (axis cs:{56.457},{24.368}) {}; % Tau,  3.88 
+%\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{21}}] at (axis cs:{56.477},{24.554}) {}; % Tau,  5.77 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{23}}] at (axis cs:{56.582},{23.948}) {}; % Tau,  4.17 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{27}}] at (axis cs:{57.291},{24.053}) {}; % Tau,  3.63 
+%\node[pin={[pin distance=-0.8\onedegree,Flaamsted]-135:{28}}] at (axis cs:{57.297},{24.137}) {}; % Tau,  5.06 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{29}}] at (axis cs:{56.419},{6.050}) {}; % Tau,  5.34 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{30}}] at (axis cs:{57.068},{11.143}) {}; % Tau,  5.08 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{31}}] at (axis cs:{58.001},{6.535}) {}; % Tau,  5.69 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{32}}] at (axis cs:{59.217},{22.478}) {}; % Tau,  5.62 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{36}}] at (axis cs:{61.090},{24.106}) {}; % Tau,  5.51 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{37}}] at (axis cs:{61.174},{22.082}) {}; % Tau,  4.35 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{39}}] at (axis cs:{61.334},{22.009}) {}; % Tau,  5.89 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{40}}] at (axis cs:{60.936},{5.436}) {}; % Tau,  5.32 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{41}}] at (axis cs:{61.652},{27.600}) {}; % Tau,  5.18 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{44}}] at (axis cs:{62.708},{26.481}) {}; % Tau,  5.40 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{45}}] at (axis cs:{62.835},{5.523}) {}; % Tau,  5.71 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{46}}] at (axis cs:{63.388},{7.716}) {}; % Tau,  5.29 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{47}}] at (axis cs:{63.485},{9.264}) {}; % Tau,  4.89 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 4}}] at (axis cs:{52.602},{11.336}) {}; % Tau,  5.13 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{51}}] at (axis cs:{64.597},{21.579}) {}; % Tau,  5.64 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{53}}] at (axis cs:{64.859},{21.142}) {}; % Tau,  5.50 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{56}}] at (axis cs:{64.903},{21.773}) {}; % Tau,  5.36 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{57}}] at (axis cs:{64.990},{14.035}) {}; % Tau,  5.58 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{58}}] at (axis cs:{65.151},{15.095}) {}; % Tau,  5.26 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{ 5}}] at (axis cs:{52.718},{12.937}) {}; % Tau,  4.13 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{60}}] at (axis cs:{65.515},{14.077}) {}; % Tau,  5.72 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]0:{63}}] at (axis cs:{65.854},{16.777}) {}; % Tau,  5.63 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{66}}] at (axis cs:{65.966},{9.461}) {}; % Tau,  5.11 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{ 6}}] at (axis cs:{53.150},{9.373}) {}; % Tau,  5.76 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]0:{71}}] at (axis cs:{66.586},{15.618}) {}; % Tau,  4.49 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{72}}] at (axis cs:{66.823},{22.996}) {}; % Tau,  5.52 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{75}}] at (axis cs:{67.110},{16.360}) {}; % Tau,  4.97 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{76}}] at (axis cs:{67.098},{14.741}) {}; % Tau,  5.91 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{79}}] at (axis cs:{67.209},{13.047}) {}; % Tau,  5.02 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 7}}] at (axis cs:{53.611},{24.464}) {}; % Tau,  5.99 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{80}}] at (axis cs:{67.536},{15.638}) {}; % Tau,  5.64 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]180:{81}}] at (axis cs:{67.662},{15.692}) {}; % Tau,  5.46 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{83}}] at (axis cs:{67.656},{13.724}) {}; % Tau,  5.40 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{88}}] at (axis cs:{68.914},{10.161}) {}; % Tau,  4.25 
+%\node[pin={[pin distance=-0.8\onedegree,Flaamsted]-45:{89}}] at (axis cs:{69.539},{16.033}) {}; % Tau,  5.78 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{90}}] at (axis cs:{69.539},{12.511}) {}; % Tau,  4.27 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]-90:{93}}] at (axis cs:{70.014},{12.197}) {}; % Tau,  5.46 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{97}}] at (axis cs:{72.844},{18.840}) {}; % Tau,  5.09 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{98}}] at (axis cs:{74.539},{25.050}) {}; % Tau,  5.79 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{99}}] at (axis cs:{74.453},{23.948}) {}; % Tau,  5.81 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\alpha$}}] at (axis cs:{28.270},{29.579}) {}; % Tri,  3.42 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\beta$}}] at (axis cs:{32.386},{34.987}) {}; % Tri,  3.02 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\delta$}}] at (axis cs:{34.263},{34.224}) {}; % Tri,  4.87 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]90:{$\boldsymbol\epsilon$}}] at (axis cs:{30.741},{33.284}) {}; % Tri,  5.52 
+\node[pin={[pin distance=-0.4\onedegree,Bayer]00:{$\boldsymbol\gamma$}}] at (axis cs:{34.329},{33.847}) {}; % Tri,  4.01 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{10}}] at (axis cs:{34.737},{28.643}) {}; % Tri,  5.30 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{11}}] at (axis cs:{36.866},{31.801}) {}; % Tri,  5.56 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{12}}] at (axis cs:{37.042},{29.669}) {}; % Tri,  5.29 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{13}}] at (axis cs:{37.202},{29.932}) {}; % Tri,  5.90 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{14}}] at (axis cs:{38.026},{36.147}) {}; % Tri,  5.15 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]90:{15}}] at (axis cs:{38.945},{34.687}) {}; % Tri,  5.39 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 6}}] at (axis cs:{33.093},{30.303}) {}; % Tri,  5.15 
+\node[pin={[pin distance=-0.4\onedegree,Flaamsted]00:{ 7}}] at (axis cs:{33.985},{33.359}) {}; % Tri,  5.25 
+\end{axis}
